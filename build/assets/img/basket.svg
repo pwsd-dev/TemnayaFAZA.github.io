@@ -1,0 +1,35 @@
+<svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0)">
+<g filter="url(#filter0_d)">
+<path d="M32 2H34V4H32V2Z" fill="white"/>
+<path d="M30 6V4H32V6H30Z" fill="white"/>
+<path d="M28 8V6H30V8H28Z" fill="white"/>
+<path d="M26 10V8H28V10H26Z" fill="white"/>
+<path d="M10 22H12V30H10V22Z" fill="white"/>
+<path d="M24 18H26V20H24V18Z" fill="white"/>
+<path d="M19 18H17V20H19V18Z" fill="white"/>
+<path d="M10 18H12V20H10V18Z" fill="white"/>
+<path d="M17 22H19V30H17V22Z" fill="white"/>
+<path d="M26 22H24V30H26V22Z" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M10 10H12V12H24V10H26V12H35V13H36V17H35V21H34V25H33V29H32V33H31V34H5V33H4V29H3V25H2V21H1V17H0V13H1V12H10V10ZM6 32H30V29H31V25H32V21H33V17H34V14H22V16H20V14H16V16H14V14H2V17H3V21H4V25H5V29H6V32Z" fill="white"/>
+<path d="M8 8H10V10H8V8Z" fill="white"/>
+<path d="M6 6H8V8H6V6Z" fill="white"/>
+<path d="M4 4H6V6H4V4Z" fill="white"/>
+<path d="M4 4H2V2H4V4Z" fill="white"/>
+</g>
+</g>
+<defs>
+<filter id="filter0_d" x="-2" y="0" width="40" height="36" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+<feOffset/>
+<feGaussianBlur stdDeviation="1"/>
+<feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+</filter>
+<clipPath id="clip0">
+<rect width="36" height="36" fill="white"/>
+</clipPath>
+</defs>
+</svg>

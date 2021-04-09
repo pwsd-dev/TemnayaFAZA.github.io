@@ -20,8 +20,19 @@
   .font(@font; @fontRegular);
 }
 
+@font-face {
+  .font(@PixelForce; "@{PixelForce}-Regular");
+}
+
+@font-face {
+  .font(@Oswald; "@{Oswald}-Bold");
+}
+
 body {
   font-family: @fontRegular;
+  &.modal-open {
+    overflow: hidden;
+  }
 }
 a, button{
   cursor: pointer;
@@ -34,4 +45,8 @@ input{
   &:focus{
       outline: none;
   }
+}
+
+html {
+	scroll-behavior: smooth;
 }

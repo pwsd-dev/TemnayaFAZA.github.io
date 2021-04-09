@@ -1,9 +1,55 @@
 .header{
-    .parent{
-        .row-flex();
-        .child{
-            .col();
-            .size(1);
+    background-color: #000;
+    padding: 36px 0 14px 0;
+    .nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &-left {
+            .page__img {
+                width: 126px;
+                font-size: 0;
+                svg {
+                    max-width: 100%;
+                    padding-top: 100%;
+                    
+                }
+            }
+        }
+
+        &-center {
+            display: flex;
+            .page__link {
+                margin: 0 36px 0 36px;
+            }
+        }
+
+        &-right {
+            position: relative;
+            .page__img {
+                
+                svg {
+                    max-width: 100%;
+                    padding-top: 100%;
+                    
+                    
+                }
+            }
+
+            .counter {
+                position: absolute;
+                font-family: "@{PixelForce}-Regular";
+                color: #fff;
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                top: -20px;
+                bottom: 0;
+                left: 25px;
+                right: 0;
+                background-color: #7900e8;
+                box-shadow: 0px 0px 4px #7900E8;
+            }
         }
     }
 }
