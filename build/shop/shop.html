@@ -4,7 +4,8 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
-		<title>Главная</title>
+		<base href="../">
+		<title>Магазин</title>
 		<link rel="stylesheet" href="css/styles.css" type="text/css">
 	</head>
 	<body>
@@ -46,71 +47,28 @@
 					</nav>
 				</div>
 			</header>
-			<section class="banner">
-				<div class="banner-gif"></div>
-				<div class="banner-lightning">
-					<div class="wrapper">
-						<div class="text">
-							<h1 class="page__title-h1">темная фаза</h1>
+			<main class="page">
+				<section class="shop">
+					<div class="bg-shop">
+						<div class="wrapper">
+							<div class="text">
+								<h1 class="page__title-h1">магазин</h1>
+							</div>
 						</div>
 					</div>
-				</div>
-			</section>
-			<section class="about">
-				<div class="bg-about"></div>
-				<div class="text">
-					<h2 class="page__title-h2">О канале</h2>
-					<p class="page__text">Чтоб понять о чем канал, вам надо не описание канала читать, а видосы смотреть)</p>
-					<p class="page__text">ТЕХНО-ТРЕШ! Изобретения, конструирование, путешествия, развлечения, экстрим!</p>
-					<p class="page__text">Подробнее? Смотри видео))</p>
-				</div>
-			</section>
-			<section class="backstage">
-				<div class="bg-backstage"></div>
-				<div class="text">
-					<h2 class="page__title-h2">Бекстейдж</h2>
-					<p class="page__text">Здесь вы можете подробнее увидеть весь процесс создания видео и фото</p>
-					<btn class="page__btn">Подробнее</btn>
-				</div>
-			</section>
-			<section class="merch">
-				<div class="bg-merch"></div>
-				<div class="text">
-					<h2 class="page__title-h2">Новый мерч</h2>
-					<p class="page__text">Ещё больше футболок и техники уже в магазине! Успей купить!</p>
-					<btn class="page__btn">Подробнее</btn>
-				</div>
-			</section>
-			<section class="video">
-				<div class="bg-video"></div>
-				<div class="text">
-					<h2 class="page__title-h2">новые видео</h2>
-				</div>
-				<div class="video-zaglushka">
+				</section>
+				<section class="breadcrumbs-shop">
 					<div class="wrapper">
-						<div class="page__img"><img src="assets/img/video-zaglushka.png"></div>
+						<nav class="nav">
+							<div class="page__link"><a href="../">Главная</a></div>
+							<div class="icon-arrow">
+								<div class="page__img"><img src="assets/img/icon-arrow.svg"></div>
+							</div>
+							<div class="page__link"><a href="shop/shop.html">магазин</a></div>
+						</nav>
 					</div>
-				</div>
-			</section>
-			<section class="be-first">
-				<div class="bg-be-first"></div>
-				<div class="wrapper">
-					<h2 class="page__title-h2">будь первым</h2>
-					<p class="page__text_more">Подпишись на уведомления и следи за выходом новых видео</p>
-					<div class="row">
-						<p class="page__text">email</p>
-						<form class="form" action="">
-							<input class="input" type="text" placeholder="введите email">
-						</form>
-						<btn class="page__btn">подписаться</btn>
-					</div>
-				</div>
-			</section>
-			<section class="donate">
-				<h2 class="page__title-h2">Помощь блогеру</h2>
-				<p class="page__text_more">Вы можете поддержать донатом новые проекты</p>
-				<btn class="page__btn">Поддержать доном</btn>
-			</section>
+				</section>
+			</main>
 			<footer class="footer">
 				<div class="wrapper">
 					<div class="nav-left"><a href="/">
