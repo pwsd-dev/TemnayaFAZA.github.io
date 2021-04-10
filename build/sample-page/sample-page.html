@@ -10,9 +10,6 @@
 	</head>
 	<body>
 		<div class="page">
-			<button class="debugGrid-btn debugGrid-btn__create" onclick="debugGridCreate()"></button>
-			<button class="debugGrid-btn debugGrid-btn__remove debugGrid-btn__hidden" onclick="debugGridRemove()"></button>
-			<div class="debugGrid debugGrid__z-index-negative"></div>
 			<header class="header">
 				<div class="wrapper">
 					<nav class="nav">
@@ -41,7 +38,8 @@
 											<div class="page__img"><img src="assets/img/vk.svg"></div>
 											<div class="page__img"><img src="assets/img/youtube.svg"></div>
 										</div>
-										<div class="page__img"><img src="assets/img/logo.svg"></div>
+										<div class="logo"><a href="/">
+												<div class="page__img"><img src="assets/img/logo.svg"></div></a></div>
 									</div>
 								</div>
 							</div>
@@ -57,7 +55,8 @@
 				</div>
 			</section>
 		</div>
-		<script src="js/debug-grid-create.js"></script>
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 		<script src="js/main.js"></script>
 	</body>
 </html>

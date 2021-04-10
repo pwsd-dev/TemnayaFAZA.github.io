@@ -1,0 +1,48 @@
+.footer {
+    background-color: #000;
+    padding-bottom: 60px;
+    .nav-left {
+        .page__img {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+    }
+
+    .nav-center {
+        display: flex;
+        justify-content: center;
+        .page__link{ 
+            &:nth-child(2){ 
+                margin: 0 72px 60px 72px;
+            };
+        }
+    }
+
+    .soc {
+        display: flex;
+        justify-content: center;
+        .page__img {
+            margin: 0 30px 80px 30px;
+        }
+    }
+
+    .text {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        .page__text {
+            position: relative;
+            &::after {
+                content: '';
+                position: absolute;
+                display: inline-block;
+                width: 30px;
+                height: 30px;
+                top: 0;
+                right: -37px;
+                background-image: url(../assets/img/YODE-icon.svg);
+                background-repeat: no-repeat;
+            }
+        }
+    }
+}

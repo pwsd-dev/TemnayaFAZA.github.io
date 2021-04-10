@@ -1,0 +1,73 @@
+.be-first {
+    background-color: #000;
+    padding-bottom: 18%;
+    .bg-be-first {
+
+        background-image: url(../assets/img/be-first-bg.png);
+        height: 630px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        font-size: 0;
+        margin-bottom: 117px;
+    }
+
+    .page__title-h2 {
+        margin-bottom: 35px;
+    }
+
+    .page__text_more {
+        margin-bottom: 62px;
+        text-align: center;
+    }
+
+    .row {
+        display: flex;
+        justify-content: space-evenly;
+        width: 1100px;
+        align-items: center;
+        margin: 0px auto 0 76px;
+        .page__text {
+            margin-right: 25px;
+        }
+    }
+
+    .form {
+        width: 437px;
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            width: 485px;
+            height: 3px;
+            background-color: #fff;
+            bottom: -20px;
+            left: 0px;
+        }
+
+        input {
+            font-family: "@{PixelForce}-Regular";
+            letter-spacing: 3px;
+            background: transparent;
+            border: transparent;
+            color: #fff;
+            width: 100%;
+            &::placeholder {
+                font-family: "@{PixelForce}-Regular";
+                letter-spacing: 3px;
+                color: #fff;
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    .donate {
+        padding-top: 120px;
+    }
+
+    .page__btn {
+        width: 345px;
+        margin: 0 auto;
+    }
+    
+}
