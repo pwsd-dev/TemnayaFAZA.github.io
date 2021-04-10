@@ -1,0 +1,12 @@
+extends ../templates/template
+block base
+    base(href='../')
+block title
+    title Новости и статьи
+block append style
+block content
+    include ../blocks/header
+    main.page
+        include content
+    include ../blocks/be-first
+    include ../blocks/footer
