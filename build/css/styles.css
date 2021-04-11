@@ -1042,8 +1042,8 @@ button {
           align-items: center;
 }
 
-.shop .text {
-  width: 579px;
+.items-wrapper .item {
+  margin-bottom: 95px;
 }
 
 @media screen and (max-width: 1550px) {
