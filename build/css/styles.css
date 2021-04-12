@@ -944,10 +944,16 @@ button {
 .breadcrumbs .nav {
   display: -webkit-box;
   display: flex;
+  -webkit-box-align: center;
+          align-items: center;
 }
 
 .breadcrumbs .nav .icon-arrow {
   margin: 0 32px 0 32px;
+}
+
+.breadcrumbs .nav .icon-arrow .page__img {
+  height: 18px;
 }
 
 .breadcrumbs .nav .page__link:first-child a {
