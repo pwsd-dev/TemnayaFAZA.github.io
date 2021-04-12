@@ -1,11 +1,20 @@
 function openBlock() {
     const someId = document.getElementById("someId");
     const otherId = document.getElementById("other");
-    const shopToggleId = document.getElementById("shopToggle");
-
-    shopToggleId.classList.toggle("technical");
     someId.classList.toggle("active");
     otherId.classList.toggle("active");
+
+}
+
+function toggleShop() {
+    const shopToggleId = document.getElementById("shopToggle");
+    shopToggleId.classList.add("technical");
+    const innerTechnical = document.getElementById("innerTechnical");
+    innerTechnical.classList.add("active");
+    const shopToggleMerch = document.getElementById("shopToggleMerch");
+    shopToggleMerch.classList.add("merch");
+    const innerMerch = document.getElementById("innerMerch");
+    innerMerch.classList.add("active");
 
 }
 

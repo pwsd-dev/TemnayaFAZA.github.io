@@ -1137,6 +1137,26 @@ button {
   margin-right: 40px;
 }
 
+.togglers .toggle-items .toggle-item:first-child {
+  margin: 0 35px 0 0;
+}
+
+.technical .inner {
+  display: none;
+}
+
+.technical .inner.active {
+  display: block;
+}
+
+.merch .inner {
+  display: none;
+}
+
+.merch .inner.active {
+  display: block;
+}
+
 @media screen and (max-width: 1550px) {
   .wrapper {
     padding-left: 15px;

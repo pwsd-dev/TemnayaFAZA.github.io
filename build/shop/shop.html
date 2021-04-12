@@ -68,11 +68,15 @@
 					<div class="wrapper">
 						<div class="toggle-items">
 							<div class="toggle-item">
-								<p class="page__text__toggle">Мерч</p>
+								<button id="shopToggleMerch" type="button" onclick="toggleShop()">
+									<p class="page__text__toggle">Мерч</p>
+								</button>
 							</div>
-							<button id="shopToggle" type="button" onclick="openBlock()">
-								<p class="page__text__toggle">Технический хлам</p>
-							</button>
+							<div class="toggle-item">
+								<button id="shopToggle" type="button" onclick="toggleShop()">
+									<p class="page__text__toggle">Технический хлам</p>
+								</button>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -122,18 +126,40 @@
 						</div>
 					</div>
 				</div>
-				<div class="technical">
-					<div class="items">
-						<div class="wrapper">
-							<div class="items-wrapper">
-								<div class="item">
-									<div class="page__img"><img src="assets/img/t-shirt-shop.png"></div>
-									<div class="text first-row">
-										<p class="page__text_small">Крутая<br> футболка </p>
-										<p class="page__text_small">1500p</p>
+				<div class="merch">
+					<div class="inner" id="innerMerch">
+						<div class="items">
+							<div class="wrapper">
+								<div class="items-wrapper">
+									<div class="item">
+										<div class="page__img"><img src="assets/img/t-shirt-shop.png"></div>
+										<div class="text first-row">
+											<p class="page__text_small">Крутая<br> футболка </p>
+											<p class="page__text_small">1500p</p>
+										</div>
+										<div class="row">
+											<div class="text"></div>
+										</div>
 									</div>
-									<div class="row">
-										<div class="text"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="technical">
+					<div class="inner" id="innerTechnical">
+						<div class="items">
+							<div class="wrapper">
+								<div class="items-wrapper">
+									<div class="item">
+										<div class="page__img"><img src="assets/img/t-shirt-shop.png"></div>
+										<div class="text first-row">
+											<p class="page__text_small">Крутая<br> футболка </p>
+											<p class="page__text_small">1500p</p>
+										</div>
+										<div class="row">
+											<div class="text"></div>
+										</div>
 									</div>
 								</div>
 							</div>
