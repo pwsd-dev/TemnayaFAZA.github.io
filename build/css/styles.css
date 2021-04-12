@@ -544,15 +544,21 @@ html {
   transition: 0.1s ease-in-out;
 }
 
-.header .nav-right .burger .inner {
+.header .nav-right .burger .other {
   display: none;
-  opacity: 0;
-  -webkit-transition: 0.2s ease;
-  transition: 0.2s ease;
+  position: fixed;
+  overflow: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 3000;
+  background: rgba(39, 39, 39, 0.6);
 }
 
-.header .nav-right .burger .inner.active {
+.header .nav-right .burger .other .inner {
   height: 100%;
+  width: 100%;
   display: -webkit-box;
   display: flex;
   -webkit-box-orient: vertical;
@@ -560,20 +566,12 @@ html {
           flex-direction: column;
   -webkit-box-pack: center;
           justify-content: center;
-  z-index: 3000;
-  position: fixed;
-  overflow: auto;
   background: #000;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  opacity: 1;
-  -webkit-transition: 0.2s ease;
-  transition: 0.2s ease;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
 }
 
-.header .nav-right .burger .inner.active .text {
+.header .nav-right .burger .other .inner .text {
   display: block;
   color: #fff;
   width: 560px;
@@ -582,7 +580,7 @@ html {
   align-self: center;
 }
 
-.header .nav-right .burger .inner.active .soc {
+.header .nav-right .burger .other .inner .soc {
   display: -webkit-box;
   display: flex;
   -webkit-box-pack: justify;
@@ -591,8 +589,12 @@ html {
   margin: 90px auto 90px auto;
 }
 
-.header .nav-right .burger .inner.active .logo {
+.header .nav-right .burger .other .inner .logo {
   text-align: center;
+}
+
+.header .nav-right .burger .other .inner.active {
+  opacity: 1;
 }
 
 button {

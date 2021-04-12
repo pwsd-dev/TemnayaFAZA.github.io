@@ -1,8 +1,9 @@
 function openBlock() {
-    const someId = document.getElementById("someId");
+    const burgerBtn = document.getElementById("burgerBtn");
     const otherId = document.getElementById("other");
-    someId.classList.toggle("active");
-    otherId.classList.toggle("active");
+    burgerBtn.classList.toggle("active");
+    // otherId.classList.toggle("hidden");
+    // otherId.querySelector('.inner').classList.toggle('active');
 
 }
 
@@ -18,12 +19,20 @@ function toggleShop() {
 
 }
 
-// $(document).ready(function () {
-//     $("#someId").click(function () {
-//         $("#other").fadeIn();
-//     });
+$(document).ready(function () {
+    $("#burgerBtn").click(function () {
+        if($("#other").hasClass('active')){
+            $("#other").fadeOut();
+            $("#other").toggleClass('active');
+        } else{
+       
+            $("#other").fadeIn();
+            $("#other").toggleClass('active');
+        }
+    });
+   
 // - fixme
-//     $("#someId").click(function () {
+//     $("#burgerBtn").click(function () {
 //         $("#other").fadeOut();
 //     });
-// });
+});
