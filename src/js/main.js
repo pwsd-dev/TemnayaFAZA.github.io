@@ -9,9 +9,9 @@ function openBlock() {
 
 
 $(function () {
-    $('ul li').on('click', function () {
+    $('.nav li').on('click', function () {
         $(this).addClass('active').siblings().removeClass('active');
-        $($(this).data('id')).addClass('selected').siblings().removeClass('selected');
+        $('#'+$(this).data('id')).addClass('selected').siblings().removeClass('selected');
     });
 });
 
