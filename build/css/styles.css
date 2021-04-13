@@ -298,7 +298,7 @@ html {
   color: #fff;
 }
 
-.page__text__toggle {
+.page__text_big {
   font-family: "PixelForce-Regular";
   font-size: 36px;
   line-height: 24px;
@@ -745,7 +745,7 @@ button {
 }
 
 .video .bg-video {
-  background-image: url(../assets/img/video-bg.png);
+  background-image: url(../assets/img/shop.gif);
   height: 630px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -986,6 +986,34 @@ button {
   height: 18px;
 }
 
+.breadcrumbs-news-article {
+  background-color: #000;
+  padding: 60px 0 40px 0;
+}
+
+.breadcrumbs-news-article .nav {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+}
+
+.breadcrumbs-news-article .nav .icon-arrow {
+  margin: 0 32px 0 32px;
+}
+
+.breadcrumbs-news-article .nav .icon-arrow .page__img {
+  height: 18px;
+}
+
+.breadcrumbs-news-article .nav .page__link:first-child a {
+  color: grey;
+}
+
+.breadcrumbs-news-article .nav .page__link:nth-child(3) a {
+  color: grey;
+}
+
 .news .bg-news {
   background-image: url(../assets/img/news-bg.png);
   height: 400px;
@@ -1048,12 +1076,76 @@ button {
           justify-content: space-between;
 }
 
+.article-news {
+  background-color: #000;
+}
+
+.article-news .bg-article-news {
+  background-image: url(../assets/img/bg-article-news.png);
+  height: 400px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-size: 0;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+}
+
+.article-news .bg-article-news .text-wrapper .row {
+  display: -webkit-box;
+  display: flex;
+  padding-top: 32px;
+}
+
+.article-news .bg-article-news .text-wrapper .row .page__text__small {
+  margin-right: 48px;
+}
+
+.article-news .bg-article-news .text-wrapper .page__text_big {
+  color: #fff;
+  line-height: 44px;
+}
+
+.article-news-article {
+  background-color: #000;
+  padding: 60px 0 120px 0;
+}
+
+.article-news-article .text .title {
+  width: 756px;
+}
+
+.article-news-article .text .page__text_big {
+  color: #fff;
+  line-height: 44px;
+  margin-bottom: 32px;
+}
+
+.article-news-article .text .row {
+  display: -webkit-box;
+  display: flex;
+  margin-bottom: 32px;
+}
+
+.article-news-article .text .row .page__text__small {
+  margin-right: 48px;
+}
+
+.article-news-article .text .page__text {
+  color: grey;
+}
+
+.article-news-article .text .page__text_more {
+  margin: 36px 0 24px 0;
+}
+
 .shop {
   background-color: #000;
 }
 
 .shop .bg-shop {
-  background-image: url(../assets/img/shop-bg.png);
+  background-image: url(../assets/img/shop.gif);
   height: 400px;
   background-size: cover;
   background-repeat: no-repeat;
