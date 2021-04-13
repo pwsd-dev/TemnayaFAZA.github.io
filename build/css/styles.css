@@ -1068,13 +1068,13 @@ button {
   background-color: #000;
 }
 
-.tabs .nav ul {
+.tabs ul.nav {
   padding: 60px 0 58px 0;
   display: -webkit-box;
   display: flex;
 }
 
-.tabs .nav ul li {
+.tabs ul.nav li {
   position: relative;
   margin: 0 20px 0 20px;
   font-family: "PixelForce-Regular";
@@ -1084,16 +1084,16 @@ button {
   color: grey;
 }
 
-.tabs .nav ul li.active {
+.tabs ul.nav li.active {
   color: #fff;
 }
 
-.tabs .nav ul li:hover {
+.tabs ul.nav li:hover {
   -webkit-transition: 0.1s ease-in-out;
   transition: 0.1s ease-in-out;
 }
 
-.tabs .nav ul li:hover::after {
+.tabs ul.nav li:hover::after {
   content: '';
   position: absolute;
   width: 100%;
@@ -1107,10 +1107,11 @@ button {
 .technical,
 .merch {
   background-color: #000;
+  display: none;
 }
 
-.technical .inner.selected,
-.merch .inner.selected {
+.technical.selected,
+.merch.selected {
   display: block;
 }
 
