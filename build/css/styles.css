@@ -547,7 +547,6 @@ html {
 .header .nav-right .burger .other {
   display: none;
   position: fixed;
-  overflow: auto;
   top: 0;
   left: 0;
   right: 0;
@@ -566,6 +565,7 @@ html {
           flex-direction: column;
   -webkit-box-pack: center;
           justify-content: center;
+  overflow-x: hidden;
   background: #000;
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
@@ -603,15 +603,15 @@ button {
 }
 
 .banner-gif {
-  background-image: url(../assets/img/be-first-bg.png);
-  height: 630px;
+  background-image: url(../assets/img/banner.gif);
   background-size: cover;
   background-repeat: no-repeat;
+  height: 630px;
   font-size: 0;
 }
 
 .banner-lightning {
-  background-image: url(../assets/img/lightning.jpg);
+  background-image: url(../assets/img/lighhtning.gif);
   background-color: #000;
   background-size: contain;
   background-repeat: no-repeat;
@@ -671,7 +671,7 @@ button {
 }
 
 .backstage .bg-backstage {
-  background-image: url(../assets/img/backstage-bg.png);
+  background-image: url(../assets/img/forum.gif);
   height: 630px;
   background-size: cover;
   background-repeat: no-repeat;
