@@ -9,7 +9,7 @@ function openBlock() {
 
 
 $(function () {
-    $('.toggle-item button').on('click', function () {
+    $('ul li').on('click', function () {
         $(this).addClass('active').siblings().removeClass('active');
         $($(this).data('id')).addClass('selected').siblings().removeClass('selected');
     });

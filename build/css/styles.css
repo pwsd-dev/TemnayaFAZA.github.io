@@ -1007,24 +1007,24 @@ button {
   padding-bottom: 30px;
 }
 
-.items-wrapper {
+.items-wrapper-news {
   display: -webkit-box;
   display: flex;
   flex-wrap: wrap;
 }
 
-.items-wrapper .item {
+.items-wrapper-news .item-news {
   display: block;
   width: 350px;
   height: 340px;
   margin: 0 12.5px 20px 12.5px;
 }
 
-.items-wrapper .item .page__img {
+.items-wrapper-news .item-news .page__img {
   height: 236px;
 }
 
-.items-wrapper .item .page__text_small {
+.items-wrapper-news .item-news .page__text_small {
   font-family: "PixelForce-Regular";
   font-size: 16px;
   line-height: 24px;
@@ -1032,7 +1032,7 @@ button {
   color: #fff;
 }
 
-.items-wrapper .item .page__text_very-small {
+.items-wrapper-news .item-news .page__text_very-small {
   font-family: "PixelForce-Regular";
   font-size: 10px;
   line-height: 24px;
@@ -1040,7 +1040,7 @@ button {
   color: #fff;
 }
 
-.items-wrapper .item .row {
+.items-wrapper-news .item-news .row-news {
   padding-top: 14px;
   display: -webkit-box;
   display: flex;
@@ -1064,35 +1064,86 @@ button {
           align-items: center;
 }
 
-.text {
+.tabs {
+  background-color: #000;
+}
+
+.tabs .nav ul {
+  padding: 60px 0 58px 0;
+  display: -webkit-box;
+  display: flex;
+}
+
+.tabs .nav ul li {
+  position: relative;
+  margin: 0 20px 0 20px;
+  font-family: "PixelForce-Regular";
+  font-size: 36px;
+  line-height: 24px;
+  letter-spacing: 2.2px;
+  color: grey;
+}
+
+.tabs .nav ul li.active {
+  color: #fff;
+}
+
+.tabs .nav ul li:hover {
+  -webkit-transition: 0.1s ease-in-out;
+  transition: 0.1s ease-in-out;
+}
+
+.tabs .nav ul li:hover::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background-color: #fff;
+  bottom: -20px;
+  left: 0;
+  right: 0;
+}
+
+.technical,
+.merch {
+  background-color: #000;
+}
+
+.technical .inner.selected,
+.merch .inner.selected {
+  display: block;
+}
+
+.technical .items-shop .items-wrapper-shop,
+.merch .items-shop .items-wrapper-shop {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.technical .items-shop .items-wrapper-shop .item-shop,
+.merch .items-shop .items-wrapper-shop .item-shop {
+  width: 300px;
+  margin-bottom: 50px;
+}
+
+.technical .items-shop .items-wrapper-shop .item-shop .row-shop,
+.merch .items-shop .items-wrapper-shop .item-shop .row-shop {
   display: -webkit-box;
   display: flex;
   -webkit-box-pack: justify;
           justify-content: space-between;
 }
 
-.text.first-row {
-  padding-top: 80px;
-  display: -webkit-box;
-  display: flex;
-  width: 299px;
-  -webkit-box-pack: justify;
-          justify-content: space-between;
-}
-
-.row {
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-pack: justify;
-          justify-content: space-between;
-}
-
-.row .text {
-  width: 299px;
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-pack: justify;
-          justify-content: space-between;
+.technical .items-shop .items-wrapper-shop .item-shop .row-shop .page__text_small,
+.merch .items-shop .items-wrapper-shop .item-shop .row-shop .page__text_small {
+  font-family: "PixelForce-Regular";
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 2.2px;
+  color: #fff;
 }
 
 @media screen and (max-width: 1550px) {
