@@ -4,73 +4,14 @@ section.shop
             .text
                 h1.page__title-h1 магазин
 include ../blocks/breadcrumbs-shop
-.togglers
+.tabs
     .wrapper
-        .toggle-items
-            .toggle-item
-                button#shopToggleMerch(type="button" onclick="toggleShop()")
-                    p.page__text__toggle Мерч
-            .toggle-item
-                button#shopToggle(type="button" onclick="toggleShop()")
-                    p.page__text__toggle Технический хлам
-.items
-    .wrapper
-        .items-wrapper
-            .item
-                .page__img
-                    img(src="assets/img/t-shirt-shop.png")
-                .text.first-row
-                    p.page__text_small Крутая<br> футболка 
-                    p.page__text_small 1500p
-                .row
-                    .text
-                        //- p.page__text_very-small 17 нояб. 2020 г.
-            .item
-                .page__img
-                    img(src="assets/img/t-shirt-shop.png")
-                .text.first-row
-                    p.page__text_small Крутая<br> футболка 
-                    p.page__text_small 1500p
-                .row
-                    .text
-                        //- p.page__text_very-small 17 нояб. 2020 г.
-                        //- p.page__text_very-small 160 просмотров
-            .item
-                .page__img
-                    img(src="assets/img/t-shirt-shop.png")
-                .text.first-row
-                    p.page__text_small Крутая<br> футболка 
-                    p.page__text_small 1500p
-                .row
-                    .text
-                        //- p.page__text_very-small 17 нояб. 2020 г.
-                        //- p.page__text_very-small 160 просмотров
-            .item
-                .page__img
-                    img(src="assets/img/t-shirt-shop.png")
-                .text.first-row
-                    p.page__text_small Крутая<br> футболка 
-                    p.page__text_small 1500p
-                .row
-                    .text
-                        //- p.page__text_very-small 17 нояб. 2020 г.
-                        //- p.page__text_very-small 160 просмотров
-.merch
-    #innerMerch.inner
-        .items
-            .wrapper
-                .items-wrapper
-                    .item
-                        .page__img
-                            img(src="assets/img/t-shirt-shop.png")
-                        .text.first-row
-                            p.page__text_small Крутая<br> футболка 
-                            p.page__text_small 1500p
-                        .row
-                            .text
-                                //- p.page__text_very-small 17 нояб. 2020 г.
+        nav.nav
+            ul
+                li(data-id="merch")
+                li(data-id="technical")    
 .technical
-    #innerTechnical.inner
+    #technical.inner
         .items
             .wrapper
                 .items-wrapper

@@ -1064,10 +1064,6 @@ button {
           align-items: center;
 }
 
-.items-wrapper .item {
-  margin-bottom: 95px;
-}
-
 .text {
   display: -webkit-box;
   display: flex;
@@ -1082,8 +1078,6 @@ button {
   width: 299px;
   -webkit-box-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-          align-items: center;
 }
 
 .row {
@@ -1094,69 +1088,11 @@ button {
 }
 
 .row .text {
-  width: 300px;
+  width: 299px;
   display: -webkit-box;
   display: flex;
   -webkit-box-pack: justify;
           justify-content: space-between;
-}
-
-.togglers {
-  background-color: #000;
-}
-
-.togglers .page__text__toggle {
-  position: relative;
-}
-
-.togglers .page__text__toggle::after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 4px;
-  background-color: #fff;
-  bottom: -30px;
-  left: 0;
-  opacity: 0;
-  -webkit-transition: 0.2s ease-in-out;
-  transition: 0.2s ease-in-out;
-}
-
-.togglers .page__text__toggle:hover::after {
-  opacity: 1;
-  -webkit-transition: 0.2s ease-in-out;
-  transition: 0.2s ease-in-out;
-}
-
-.togglers .toggle-items {
-  display: -webkit-box;
-  display: flex;
-  padding: 30px 0 50px 0;
-}
-
-.togglers .toggle-items .toggle-item {
-  margin: 0 35px 0 10px;
-  margin-right: 40px;
-}
-
-.togglers .toggle-items .toggle-item:first-child {
-  margin: 0 35px 0 0;
-}
-
-.technical .inner {
-  display: none;
-}
-
-.technical .inner.active {
-  display: block;
-}
-
-.merch .inner {
-  display: none;
-}
-
-.merch .inner.active {
-  display: block;
 }
 
 @media screen and (max-width: 1550px) {

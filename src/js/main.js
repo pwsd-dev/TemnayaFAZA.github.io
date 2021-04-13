@@ -7,32 +7,28 @@ function openBlock() {
 
 }
 
-function toggleShop() {
-    const shopToggleId = document.getElementById("shopToggle");
-    shopToggleId.classList.add("technical");
-    const innerTechnical = document.getElementById("innerTechnical");
-    innerTechnical.classList.add("active");
-    const shopToggleMerch = document.getElementById("shopToggleMerch");
-    shopToggleMerch.classList.add("merch");
-    const innerMerch = document.getElementById("innerMerch");
-    innerMerch.classList.add("active");
 
-}
+$(function () {
+    $('.toggle-item button').on('click', function () {
+        $(this).addClass('active').siblings().removeClass('active');
+        $($(this).data('id')).addClass('selected').siblings().removeClass('selected');
+    });
+});
 
 $(document).ready(function () {
     $("#burgerBtn").click(function () {
-        if($("#other").hasClass('active')){
+        if ($("#other").hasClass('active')) {
             $("#other").fadeOut();
             $("#other").toggleClass('active');
-        } else{
-       
+        } else {
+
             $("#other").fadeIn();
             $("#other").toggleClass('active');
         }
     });
-   
-// - fixme
-//     $("#burgerBtn").click(function () {
-//         $("#other").fadeOut();
-//     });
+
+    // - fixme
+    //     $("#burgerBtn").click(function () {
+    //         $("#other").fadeOut();
+    //     });
 });
