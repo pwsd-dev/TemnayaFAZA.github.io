@@ -338,6 +338,10 @@ html {
   box-shadow: -5px -6px 24px #E323BE, 6px 6px 24px #00FFFF, 6px 6px 0px #00FFFF;
 }
 
+.link a {
+  text-decoration: none;
+}
+
 .header {
   background-color: #000;
   padding: 36px 0 14px 0;
@@ -1014,6 +1018,38 @@ button {
   color: grey;
 }
 
+.breadcrumbs-shop-article {
+  background-color: #000;
+  padding: 60px 0 40px 0;
+}
+
+.breadcrumbs-shop-article .nav {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+}
+
+.breadcrumbs-shop-article .nav .icon-arrow {
+  margin: 0 32px 0 32px;
+}
+
+.breadcrumbs-shop-article .nav .icon-arrow .page__img {
+  height: 18px;
+}
+
+.breadcrumbs-shop-article .nav .page__link:first-child a {
+  color: grey;
+}
+
+.breadcrumbs-shop-article .nav .page__link:nth-child(2) a {
+  color: grey;
+}
+
+.breadcrumbs-shop-article .nav .page__link:nth-child(3) a {
+  color: grey;
+}
+
 .news .bg-news {
   background-image: url(../assets/img/news-bg.png);
   height: 400px;
@@ -1039,6 +1075,10 @@ button {
   display: -webkit-box;
   display: flex;
   flex-wrap: wrap;
+}
+
+.items-wrapper-news a {
+  text-decoration: none;
 }
 
 .items-wrapper-news .item-news {
@@ -1222,6 +1262,11 @@ button {
   margin-bottom: 50px;
 }
 
+.technical .items-shop .items-wrapper-shop .item-shop a,
+.merch .items-shop .items-wrapper-shop .item-shop a {
+  text-decoration: none;
+}
+
 .technical .items-shop .items-wrapper-shop .item-shop .row-shop,
 .merch .items-shop .items-wrapper-shop .item-shop .row-shop {
   display: -webkit-box;
@@ -1237,6 +1282,135 @@ button {
   line-height: 24px;
   letter-spacing: 2.2px;
   color: #fff;
+}
+
+.shop-article {
+  background-color: #000;
+}
+
+.shop-article .bg-shop-article {
+  background-image: url(../assets/img/shop.gif);
+  height: 400px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-size: 0;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+}
+
+.shop-article .bg-shop-article .text-wrapper .row {
+  display: -webkit-box;
+  display: flex;
+  padding-top: 32px;
+}
+
+.shop-article .bg-shop-article .text-wrapper .row .page__text__small {
+  margin-right: 48px;
+}
+
+.shop-article .bg-shop-article .text-wrapper .page__text_big {
+  color: #fff;
+  line-height: 44px;
+}
+
+.shop-article-article {
+  background: #000;
+}
+
+.shop-article-article .row-slider {
+  display: -webkit-box;
+  display: flex;
+}
+
+.shop-article-article .row-slider .shop-article-nav {
+  min-width: 0;
+  height: 400px;
+  width: 81px;
+  padding-top: 30px;
+}
+
+.shop-article-article .row-slider .shop-article-nav .page__img {
+  width: 81px;
+  height: 81px;
+  margin: 20px 0 5px 0;
+  min-width: 0;
+}
+
+.shop-article-article .row-slider .shop-article-nav .slick-list.draggable {
+  height: 300px;
+}
+
+.shop-article-article .row-slider .shop-article-nav .slick-slider {
+  height: 100%;
+}
+
+.shop-article-article .row-slider .shop-article-nav .slick-list {
+  overflow: hidden;
+  height: 200px;
+}
+
+.shop-article-article .row-slider .shop-article-nav .slick-track {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+}
+
+.shop-article-article .row-slider .shop-article-nav .slick-arrow {
+  display: none;
+}
+
+.shop-article-article .row-slider .shop-article-nav .slick-slide {
+  width: 200px;
+}
+
+.shop-article-article .row-slider .shop-article-slider {
+  background: #000;
+  min-width: 0;
+  width: 554px;
+  position: relative;
+  padding: 60px 60px 10px 60px;
+}
+
+.shop-article-article .row-slider .shop-article-slider .slick-list {
+  overflow: hidden;
+}
+
+.shop-article-article .row-slider .shop-article-slider .slick-track {
+  display: -webkit-box;
+  display: flex;
+}
+
+.shop-article-article .row-slider .shop-article-slider .slick-arrow {
+  display: none;
+}
+
+.shop-article-article .row-slider .shop-article-slider .slick-dots {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  list-style: none;
+  padding-top: 10%;
+}
+
+.shop-article-article .row-slider .shop-article-slider .slick-dots li {
+  list-style: none;
+}
+
+.shop-article-article .row-slider .shop-article-slider .slick-dots li button {
+  height: 67px;
+  width: 10px;
+  font-size: 0;
+  border-radius: 50%;
+  border: transparent;
+  margin: 0 40px;
+  background-color: #000;
 }
 
 @media screen and (max-width: 1550px) {
