@@ -1747,6 +1747,7 @@ button {
 
   .breadcrumbs-news-article .nav .page__link a {
     font-size: 15px;
+    width: 100%;
   }
 
   .news .bg-news {
@@ -1768,6 +1769,15 @@ button {
   .article-news-article .text {
     width: 850px;
     padding-left: 30px;
+  }
+
+  .article-news-article .text .title {
+    width: 100%;
+  }
+
+  .article-news-article .text .page__text_big {
+    font-size: 32px;
+    width: 100%;
   }
 }
 
