@@ -1,6 +1,9 @@
 .breadcrumbs {
     background-color: #000;
     padding: 60px 0 40px 0;
+    .sm-block({
+        padding: 30px 0 20px 0;
+    });
     .nav {
         display: flex;
         align-items: center;
@@ -13,6 +16,11 @@
         }
 
         .page__link {
+            a {
+                .sm-block({
+                    font-size: 14px;
+                });
+            }
             &:first-child {
                 a {
                     color: grey;
