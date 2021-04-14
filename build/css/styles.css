@@ -1352,6 +1352,8 @@ button {
 
 .shop-article-article .description-product {
   display: none;
+  height: 450px;
+  padding-bottom: 120px;
 }
 
 .shop-article-article .description-product.selected {
