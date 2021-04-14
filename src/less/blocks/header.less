@@ -24,7 +24,9 @@
         &-center {
             display: flex;
             z-index: 100;
-            
+            .ipad-block({
+                display: none;
+            });
             .page__link {
                 margin: 0 36px 0 36px;
             }
@@ -199,7 +201,27 @@
                         // opacity: 0;
                         background: #000;
                         transition: all 1s ease;
+                        .nav-center {
+                            display: flex;
+                            flex-direction: column;
+                            
 
+                            .page__link {
+                                margin: 0 auto;
+                                &:nth-child(2){
+                                    margin: 20px auto;
+                                }
+                                .sm-block({
+                                    margin: 0 auto;
+                                });
+                            }
+
+                            .sm-block({
+                                display: flex;
+                                flex-direction: column;
+                                margin: 0 auto;
+                            });
+                        }
                         .text {
                             display: block;
                             color: #fff;

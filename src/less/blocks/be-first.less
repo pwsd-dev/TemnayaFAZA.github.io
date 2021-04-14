@@ -1,6 +1,9 @@
 .be-first {
     background-color: #000;
-    
+    .sm-block({
+        padding-bottom: 50px;
+        
+    });
     .bg-be-first {
 
         background-image: url(../assets/img/be-first-bg.png);
@@ -9,6 +12,11 @@
         background-repeat: no-repeat;
         font-size: 0;
         margin-bottom: 117px;
+        .sm-block({
+            height: 350px;
+            margin-bottom: 50px;
+            
+        });
     }
 
     .page__title-h2 {
@@ -18,6 +26,9 @@
     .page__text_more {
         margin-bottom: 62px;
         text-align: center;
+        .ipad-block({
+            line-height: 32px;
+        });
     }
 
     .row {
@@ -26,15 +37,42 @@
         width: 1100px;
         align-items: center;
         margin: 0px auto 0 76px;
+        .ipad-block({
+            width: 800px;
+        });
+        .fabletMid-block({
+            width: 680px;
+        });
+        .ipadMini-block({
+            width: 620px;
+        });
+        .sm-block({
+            width: 100%;
+            flex-direction: column;
+            margin: 0 auto;
+        });
         .page__text {
             margin-right: 25px;
+            .sm-block({
+                display: none;
+            });
+        }
+
+        .page__btn {
+            .sm-block({
+                margin: 0 auto;
+            });
         }
     }
 
     .form {
         width: 437px;
         position: relative;
-
+        .sm-block({
+            width: 100%;
+            margin-bottom: 75px;
+            
+        });
         &::after {
             content: '';
             position: absolute;
@@ -43,6 +81,21 @@
             background-color: #fff;
             bottom: -20px;
             left: 0px;
+            .ipad-block({
+                width: 385px;
+            });
+            .fabletMid-block({
+                width: 285px;
+            });
+            .ipadMini-block({
+                width: 245px;
+            });
+            .sm-block({
+                width: 100%;
+                
+                
+            });
+            
         }
 
         input {
@@ -52,6 +105,10 @@
             border: transparent;
             color: #fff;
             width: 100%;
+            .sm-block({
+                text-align: center;
+                
+            });
             &::placeholder {
                 font-family: "@{PixelForce}-Regular";
                 letter-spacing: 3px;

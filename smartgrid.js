@@ -27,10 +27,16 @@ module.exports = {
             width: "920px",
             fields: "15px"
         },
-        md: {
-            width: "920px",
+
+        fabletMid: {
+            width: "840px",
             fields: "15px"
         },
+        ipadMini: {
+            width: "770px",
+            fields: "15px"
+        },
+
         sm: {
             width: "720px"
         },

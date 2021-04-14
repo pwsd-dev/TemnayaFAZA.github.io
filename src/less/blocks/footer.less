@@ -14,8 +14,22 @@
         .page__link{ 
             &:nth-child(2){ 
                 margin: 0 72px 60px 72px;
+                .sm-block({
+                    margin: 20px auto 20px auto;
+                     
+                });
             };
+
+            .sm-block({
+                margin: 0 auto;
+                 
+            });
         }
+
+        .sm-block({
+            flex-direction: column;
+            justify-content: center;
+        });
     }
 
     .soc {
@@ -24,6 +38,11 @@
         .page__img {
             margin: 0 30px 80px 30px;
         }
+
+        .sm-block({
+            margin-top: 50px;
+             
+        });
     }
 
     .text {
@@ -42,6 +61,9 @@
                 right: -37px;
                 background-image: url(../assets/img/YODE-icon.svg);
                 background-repeat: no-repeat;
+                .sm-block({
+                    right: 0;
+                });
             }
         }
     }

@@ -575,6 +575,22 @@ html {
   transition: all 1s ease;
 }
 
+.header .nav-right .burger .other .inner .nav-center {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+}
+
+.header .nav-right .burger .other .inner .nav-center .page__link {
+  margin: 0 auto;
+}
+
+.header .nav-right .burger .other .inner .nav-center .page__link:nth-child(2) {
+  margin: 20px auto;
+}
+
 .header .nav-right .burger .other .inner .text {
   display: block;
   color: #fff;
@@ -1700,11 +1716,210 @@ button {
     padding-left: 15px;
     padding-right: 15px;
   }
+
+  .header .nav-center {
+    display: none;
+  }
+
+  .be-first .page__text_more {
+    line-height: 32px;
+  }
+
+  .be-first .row {
+    width: 800px;
+  }
+
+  .be-first .form::after {
+    width: 385px;
+  }
+
+  .donate .page__text_more {
+    line-height: 32px;
+  }
 }
 
 @media screen and (max-width: 920px) {
   .wrapper {
     padding-left: 15px;
     padding-right: 15px;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .wrapper {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .be-first .row {
+    width: 680px;
+  }
+
+  .be-first .form::after {
+    width: 285px;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .wrapper {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .be-first .row {
+    width: 620px;
+  }
+
+  .be-first .form::after {
+    width: 245px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .page__title-h1 {
+    font-size: 70px;
+  }
+
+  .page__title-h2 {
+    font-size: 40px;
+  }
+
+  .page__text {
+    font-size: 16px;
+  }
+
+  .page__text_more {
+    font-size: 20px;
+  }
+
+  .header .nav-right .burger .other .inner .nav-center .page__link {
+    margin: 0 auto;
+  }
+
+  .header .nav-right .burger .other .inner .nav-center {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    margin: 0 auto;
+  }
+
+  .banner-gif {
+    height: 400px;
+  }
+
+  .banner-lightning {
+    height: 500px;
+  }
+
+  .banner-lightning .text {
+    width: 320px;
+  }
+
+  .about .bg-about {
+    height: 350px;
+  }
+
+  .about .text {
+    height: 600px;
+    width: 320px;
+  }
+
+  .backstage .bg-backstage {
+    height: 350px;
+  }
+
+  .backstage .text {
+    height: 600px;
+    width: 320px;
+  }
+
+  .video {
+    padding-bottom: 100px;
+  }
+
+  .video .bg-video {
+    height: 350px;
+    margin-bottom: 53px;
+  }
+
+  .video .text {
+    width: 320px;
+  }
+
+  .be-first {
+    padding-bottom: 50px;
+  }
+
+  .be-first .bg-be-first {
+    height: 350px;
+    margin-bottom: 50px;
+  }
+
+  .be-first .row {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    margin: 0 auto;
+  }
+
+  .be-first .row .page__text {
+    display: none;
+  }
+
+  .be-first .row .page__btn {
+    margin: 0 auto;
+  }
+
+  .be-first .form {
+    width: 100%;
+    margin-bottom: 75px;
+  }
+
+  .be-first .form::after {
+    width: 100%;
+  }
+
+  .be-first .form input {
+    text-align: center;
+  }
+
+  .donate {
+    padding-top: 50px;
+  }
+
+  .donate .page__text_more {
+    margin: 29px auto 77px auto;
+  }
+
+  .donate .page__btn {
+    width: 255px;
+    margin-bottom: 50px;
+  }
+
+  .footer .nav-center .page__link:nth-child(2) {
+    margin: 20px auto 20px auto;
+  }
+
+  .footer .nav-center .page__link {
+    margin: 0 auto;
+  }
+
+  .footer .nav-center {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    -webkit-box-pack: center;
+            justify-content: center;
+  }
+
+  .footer .soc {
+    margin-top: 50px;
+  }
+
+  .footer .text .page__text::after {
+    right: 0;
   }
 }
