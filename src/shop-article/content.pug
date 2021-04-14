@@ -6,21 +6,70 @@ section.shop-article
 include ../blocks/breadcrumbs-shop-article
 .shop-article-article
     .wrapper
-        .row-slider
-            .shop-article-nav
-                .page__img
-                    img(src="assets/img/t-shirt-small.png")
-                .page__img
-                    img(src="assets/img/t-shirt-small.png")
-                .page__img
-                    img(src="assets/img/t-shirt-small.png")
-                .page__img
-                    img(src="assets/img/t-shirt-small.png")
-            .shop-article-slider
-                .page__img
-                    img(src="assets/img/t-shirt.png")
-                .page__img
-                    img(src="assets/img/t-shirt.png")
-                .page__img
-                    img(src="assets/img/t-shirt.png")
-            
+        .article-description-wrapper
+            .row-slider
+                .shop-article-nav
+                    .page__img
+                        img(src="assets/img/t-shirt-small.png")
+                    .page__img
+                        img(src="assets/img/t-shirt-small.png")
+                    .page__img
+                        img(src="assets/img/t-shirt-small.png")
+                    .page__img
+                        img(src="assets/img/t-shirt-small.png")
+                .shop-article-slider
+                    .page__img
+                        img(src="assets/img/t-shirt.png")
+                    .page__img
+                        img(src="assets/img/t-shirt.png")
+                    .page__img
+                        img(src="assets/img/t-shirt.png")
+                    .page__img
+                        img(src="assets/img/t-shirt.png")
+            .shop-article-article__description
+                p.page__text_more Крутая футболка<br> “Переходи на темную фазу”
+                p.page__text_more 1 500Р
+                .attributes-shop
+                    ul
+                        li 100% хлопок
+                        li Насыщенный цвет
+                        li Доставка по всему миру
+                .row
+                    form.number
+                        .__select(data-state="")
+                            .__select__title(data-default="1") 1
+                            .__select__content
+                                input#singleSelect0(type="radio" data-state="" checked).__select__input
+                                label(for="singleSelect0").__select__label 1
+                                input#singleSelect1(type="radio" name="singleSelect").__select__input
+                                label(for="singleSelect1").__select__label 1
+                                input#singleSelect1(type="radio" name="singleSelect").__select__input
+                                label(for="singleSelect1").__select__label 2
+                    form.number
+                        .__select(data-state="")
+                            .__select__title(data-default="1") s
+                            .__select__content
+                                input#singleSelect0(type="radio" data-state="" checked).__select__input
+                                label(for="singleSelect0").__select__label m
+                                input#singleSelect1(type="radio" name="singleSelect").__select__input
+                                label(for="singleSelect1").__select__label l
+                                input#singleSelect1(type="radio" name="singleSelect").__select__input
+                                label(for="singleSelect1").__select__label xl
+                    button.page__btn в корзину
+        ul.nav-shop-article
+            li.active(data-id="one") Описание
+            li(data-id="two") Оплата и доставка
+            li(data-id="three") отзывы
+        div
+            #one.description-product.selected
+                .wrapper
+                    .text-product
+                        p.page__text Описание
+            #two.description-product
+                .wrapper
+                    .text-product
+                        p.page__text Оплата и доставка
+            #three.description-product
+                .wrapper
+                    .text-product
+                        p.page__text Отзывы

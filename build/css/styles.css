@@ -1319,9 +1319,264 @@ button {
   background: #000;
 }
 
+.shop-article-article .article-description-wrapper {
+  display: -webkit-box;
+  display: flex;
+  padding-bottom: 60px;
+}
+
+.shop-article-article .nav-shop-article li {
+  font-family: "PixelForce-Regular";
+  font-size: 36px;
+  line-height: 24px;
+  letter-spacing: 2.2px;
+  color: #fff;
+  margin-right: 40px;
+  position: relative;
+  color: grey;
+}
+
+.shop-article-article .nav-shop-article li.active {
+  color: #fff;
+}
+
+.shop-article-article .nav-shop-article li:hover::after {
+  content: '';
+  position: absolute;
+  background-color: #fff;
+  height: 4px;
+  width: 100%;
+  bottom: -20px;
+  left: 0;
+}
+
+.shop-article-article .description-product {
+  display: none;
+}
+
+.shop-article-article .description-product.selected {
+  display: block;
+}
+
+.shop-article-article .nav-shop-article {
+  display: -webkit-box;
+  display: flex;
+  padding: 0 0 40px 0;
+}
+
+.shop-article-article__description {
+  padding-top: 60px;
+}
+
+.shop-article-article__description .page__text_more {
+  line-height: 35px;
+  margin-bottom: 24px;
+}
+
+.shop-article-article__description .attributes-shop ul {
+  margin-bottom: 40px;
+}
+
+.shop-article-article__description .attributes-shop ul li {
+  color: grey;
+  position: relative;
+  font-family: "PixelForce-Regular";
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 2.2px;
+  padding-left: 20px;
+}
+
+.shop-article-article__description .attributes-shop ul li::before {
+  content: '';
+  position: absolute;
+  background-color: grey;
+  width: 7px;
+  height: 7px;
+  left: 0;
+  top: 40%;
+  border-radius: 50%;
+}
+
+.shop-article-article__description .row {
+  display: -webkit-box;
+  display: flex;
+}
+
+.shop-article-article__description .row .number {
+  margin-right: 40px;
+}
+
+.shop-article-article__description .row .page__btn {
+  margin-left: 10px;
+  box-shadow: none;
+  height: 90px;
+}
+
+.shop-article-article__description .number {
+  width: 80px;
+}
+
+.shop-article-article__description .__select {
+  position: relative;
+  width: 70px;
+  height: 68px;
+  margin: 0 auto;
+}
+
+.shop-article-article__description .__select[data-state="active"] .__select__title::before {
+  -webkit-transform: translate(-3px, -50%) rotate(-45deg);
+          transform: translate(-3px, -50%) rotate(-45deg);
+}
+
+.shop-article-article__description .__select[data-state="active"] .__select__title::after {
+  -webkit-transform: translate(3px, -50%) rotate(45deg);
+          transform: translate(3px, -50%) rotate(45deg);
+}
+
+.shop-article-article__description .__select[data-state="active"] .__select__content {
+  opacity: 1;
+}
+
+.shop-article-article__description .__select[data-state="active"] .__select__label + .__select__input + .__select__label {
+  max-height: 40px;
+  border-top-width: 1px;
+}
+
+.shop-article-article__description .__select__title {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 8px 25px 8px 3px;
+  border-radius: 5px;
+  border: solid 2px #fff;
+  font-family: "PixelForce-Regular";
+  font-size: 38px;
+  line-height: 24px;
+  letter-spacing: 2.2px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.shop-article-article__description .__select__title::before,
+.shop-article-article__description .__select__title::after {
+  content: "";
+  position: absolute;
+  top: 60%;
+  right: -10px;
+  display: block;
+  width: 10px;
+  height: 2px;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  background-color: #333333;
+  -webkit-transform: translate(-3px, -50%) rotate(45deg);
+          transform: translate(-3px, -50%) rotate(45deg);
+}
+
+.shop-article-article__description .__select__title::after {
+  -webkit-transform: translate(3px, -50%) rotate(-45deg);
+          transform: translate(3px, -50%) rotate(-45deg);
+}
+
+.shop-article-article__description .__select__title:hover {
+  border-color: #fff;
+}
+
+.shop-article-article__description .__select__title:hover::before,
+.shop-article-article__description .__select__title:hover::after {
+  background-color: #fff;
+}
+
+.shop-article-article__description .reset {
+  display: -webkit-box;
+  display: flex;
+  width: 230px;
+  padding: 8px 16px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  border: solid 1px #c7ccd1;
+  border-radius: 5px;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  cursor: pointer;
+  font-weight: bold;
+  background-color: #ffffff;
+  color: #333333;
+}
+
+.shop-article-article__description .reset:hover {
+  background-color: #D8093A;
+  color: #ffffff;
+}
+
+.shop-article-article__description .__select__content {
+  position: absolute;
+  top: 40px;
+  left: 3px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  width: calc(100% - 6px);
+  background-color: #ffffff;
+  border: 1px solid #c7ccd1;
+  border-top: none;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  opacity: 0;
+  z-index: 8;
+}
+
+.shop-article-article__description .__select__input {
+  display: none;
+}
+
+.shop-article-article__description .__select__input:checked + label {
+  background-color: #dedede;
+}
+
+.shop-article-article__description .__select__input:disabled + label {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.shop-article-article__description .__select__label {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  width: 100%;
+  height: 40px;
+  max-height: 0;
+  padding: 0 16px;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.shop-article-article__description .__select__label + input + .shop-article-article__description .__select__label {
+  border-top: 0 solid #C7CCD160;
+}
+
+.shop-article-article__description .__select__label:hover {
+  background-color: #D8093A !important;
+  color: #ffffff;
+}
+
 .shop-article-article .row-slider {
   display: -webkit-box;
   display: flex;
+  width: 650px;
 }
 
 .shop-article-article .row-slider .shop-article-nav {
@@ -1411,6 +1666,10 @@ button {
   border: transparent;
   margin: 0 40px;
   background-color: #000;
+}
+
+.shop-article-article .nav-shop-article ul li {
+  color: #fff;
 }
 
 @media screen and (max-width: 1550px) {
