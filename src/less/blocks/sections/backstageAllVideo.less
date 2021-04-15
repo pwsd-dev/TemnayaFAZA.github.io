@@ -11,28 +11,63 @@
             height: 300px;
             
         });
+        .sm-block({
+            height: 300px;
+        });
+        .page__title-h1 {
+            .sm-block({
+                font-size: 34px;
+            });
+        }
     }
 
     &-wrapper {
         background-color: #000;
         .page__text_more {
             padding-bottom: 32px;
+            .ipad-block({
+                line-height: 40px;
+            });
         }
+
+        .sm-block({
+            width: 100%;
+        });
         .items-wrapper {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
+            .fabletMid-block({
+                justify-content: space-evenly;
+            });
             .page__img {
                 width: 380px;
+                .ipad-block({
+                    width: 300px;
+                });
+                
+                
                 img {
                     width: 100%;
+                    
                 }
             }
             .item {
+                
                 width: 350px;
+                .ipad-block({
+                    width: 300px;
+                });
+
+
+                
                 .description {
                     width: 300px;
                     margin: 0 auto;
+                    .ipad-block({
+                        width: 280px;
+                    });
+                    
                     .page__text_vsm {
                         margin-bottom: 16px;
                     }
@@ -51,3 +86,8 @@
     }
 }
 
+.backstageAllVideo-wrapper {
+    .sm-block({
+        width: 100%;
+    })
+}
