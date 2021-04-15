@@ -731,6 +731,10 @@ button {
   margin-bottom: 72px;
 }
 
+.backstage .text a {
+  text-decoration: none;
+}
+
 .merch {
   background-color: #000;
 }
@@ -1107,6 +1111,14 @@ button {
 
 .breadcrumbs-news-article .nav .page__link:nth-child(3) a {
   color: grey;
+}
+
+.breadcrumbs-news-article .nav .page__link .white {
+  color: #fff;
+}
+
+.breadcrumbs-news-article .nav .page__link .white a {
+  color: #fff;
 }
 
 .breadcrumbs-shop-article {
@@ -1765,6 +1777,66 @@ button {
   color: #fff;
 }
 
+.backstageAllVideo .bg-backstageAllVideo {
+  background-image: url(../assets/img/backstage-bg-inner.png);
+  height: 400px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-size: 0;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+}
+
+.backstageAllVideo-wrapper {
+  background-color: #000;
+}
+
+.backstageAllVideo-wrapper .page__text_more {
+  padding-bottom: 32px;
+}
+
+.backstageAllVideo-wrapper .items-wrapper {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+}
+
+.backstageAllVideo-wrapper .items-wrapper .page__img {
+  width: 380px;
+}
+
+.backstageAllVideo-wrapper .items-wrapper .page__img img {
+  width: 100%;
+}
+
+.backstageAllVideo-wrapper .items-wrapper .item {
+  width: 350px;
+}
+
+.backstageAllVideo-wrapper .items-wrapper .item .description {
+  width: 300px;
+  margin: 0 auto;
+}
+
+.backstageAllVideo-wrapper .items-wrapper .item .description .page__text_vsm {
+  margin-bottom: 16px;
+}
+
+.backstageAllVideo-wrapper .items-wrapper .item .description .row {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+}
+
+.backstageAllVideo-wrapper .items-wrapper .item .description .row .page__text_vsm {
+  font-size: 10px;
+}
+
 @media screen and (max-width: 1550px) {
   .wrapper {
     padding-left: 15px;
@@ -1870,6 +1942,10 @@ button {
 
   .shop-article-article .row-slider .shop-article-slider {
     padding: 60px 30px 10px 30px;
+  }
+
+  .backstageAllVideo .bg-backstageAllVideo {
+    height: 300px;
   }
 }
 
