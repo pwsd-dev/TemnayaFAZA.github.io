@@ -1153,6 +1153,34 @@ button {
   color: grey;
 }
 
+.breadcrumbs-videoArticle {
+  background-color: #000;
+  padding: 60px 0 40px 0;
+}
+
+.breadcrumbs-videoArticle .nav {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+}
+
+.breadcrumbs-videoArticle .nav .icon-arrow {
+  margin: 0 32px 0 32px;
+}
+
+.breadcrumbs-videoArticle .nav .icon-arrow .page__img {
+  height: 18px;
+}
+
+.breadcrumbs-videoArticle .nav .page__link:first-child a {
+  color: grey;
+}
+
+.breadcrumbs-videoArticle .nav .page__link:nth-child(3) a {
+  color: grey;
+}
+
 .news .bg-news {
   background-image: url(../assets/img/news-bg.png);
   height: 400px;
@@ -1837,6 +1865,54 @@ button {
   font-size: 10px;
 }
 
+.backstageVideoArticle .bg-backstageVideoArticle {
+  background-image: url(../assets/img/backstage-bg-inner.png);
+  height: 400px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-size: 0;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+}
+
+.video-article-wrapper {
+  background-color: #000;
+}
+
+.video-article-wrapper .item-video {
+  width: 300px;
+}
+
+.video-article-wrapper .text {
+  width: 840px;
+}
+
+.video-article-wrapper .text .page__text_more {
+  line-height: 35px;
+  margin-bottom: 32px;
+}
+
+.video-article-wrapper .photos {
+  margin-top: 60px;
+}
+
+.video-article-wrapper .photos .page__text_more {
+  margin-bottom: 32px;
+}
+
+.video-article-wrapper .photos .row {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+}
+
+.video-article-wrapper .photos .row .page__img {
+  width: 270px;
+}
+
 @media screen and (max-width: 1550px) {
   .wrapper {
     padding-left: 15px;
@@ -1945,6 +2021,10 @@ button {
   }
 
   .backstageAllVideo .bg-backstageAllVideo {
+    height: 300px;
+  }
+
+  .backstageVideoArticle .bg-backstageVideoArticle {
     height: 300px;
   }
 }
@@ -2134,6 +2214,31 @@ button {
 
   .video .text {
     width: 320px;
+  }
+
+  .video-wrapper .item {
+    width: 320px;
+    margin-bottom: 50px;
+  }
+
+  .video-wrapper .item-big {
+    width: 320px;
+  }
+
+  .video-wrapper .item-big .page__img {
+    width: 320px;
+  }
+
+  .video-wrapper .item-big .description {
+    width: 300px;
+  }
+
+  .video-wrapper .item-big .description .page__text_vsm {
+    font-size: 12px;
+  }
+
+  .video-wrapper .item-big .description .row .page__text_vsm {
+    font-size: 10px;
   }
 
   .be-first {

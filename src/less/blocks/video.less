@@ -41,12 +41,23 @@
         justify-content: space-evenly;
         .item {
             width: 350px;
+
+            .sm-block({
+                width: 320px;
+                margin-bottom: 50px;
+            });
             &-big {
                 width: 450px;
+                .sm-block({
+                    width: 320px;
+                });
                 position: relative;
                 top: -45px;
                 .page__img {
                     width: 450px;
+                    .sm-block({
+                        width: 320px;
+                    });
                     img {
                         width: 100%;
                     }
@@ -54,10 +65,15 @@
                 .description {
                     width: 400px;
                     margin: 0 auto;
-                    
+                    .sm-block({
+                        width: 300px;
+                    });
                     .page__text_vsm {
                         margin-bottom: 10px;
                         font-size: 16px;
+                        .sm-block({
+                            font-size: 12px;
+                        });
                         
                     }
                     .row {
@@ -65,6 +81,9 @@
                         justify-content: space-between;
                         .page__text_vsm {
                             font-size: 12px;
+                            .sm-block({
+                                font-size: 10px;
+                            });
                         }
                     }
                 }
