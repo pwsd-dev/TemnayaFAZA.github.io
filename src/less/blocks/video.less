@@ -20,20 +20,78 @@
 
     .text {
         width: 425px;
-        
         text-align: center;
         display: flex;
         flex-direction: column;
         justify-content: center;
         margin: 0 auto;
+        .page__title-h2 {
+            margin-bottom: 80px;
+        }
         .sm-block({
             
             width: 320px;
             
         });
     }
-
-    .video-zaglushka {
-        margin-top: 59px;
+    &-wrapper {
+        // height: 450px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        .item {
+            width: 350px;
+            &-big {
+                width: 450px;
+                position: relative;
+                top: -45px;
+                .page__img {
+                    width: 450px;
+                    img {
+                        width: 100%;
+                    }
+                }
+                .description {
+                    width: 400px;
+                    margin: 0 auto;
+                    
+                    .page__text_vsm {
+                        margin-bottom: 10px;
+                        font-size: 16px;
+                        
+                    }
+                    .row {
+                        display: flex;
+                        justify-content: space-between;
+                        .page__text_vsm {
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+            .page__img {
+                
+            }
+            .description {
+                width: 300px;
+                margin: 0 auto;
+                .page__text_vsm {
+                    margin-bottom: 10px;
+                    
+                }
+                .row {
+                    display: flex;
+                    justify-content: space-between;
+                    .page__text_vsm {
+                        font-size: 10px;
+                    }
+                }
+            }
+            
+        }
     }
+
+    // .video-zaglushka {
+    //     margin-top: 59px;
+    // }
 }

@@ -306,6 +306,14 @@ html {
   color: grey;
 }
 
+.page__text_vsm {
+  font-family: "PixelForce-Regular";
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: 2.2px;
+  color: #fff;
+}
+
 .page__link a {
   font-family: "PixelForce-Regular";
   font-size: 18px;
@@ -786,8 +794,75 @@ button {
   margin: 0 auto;
 }
 
-.video .video-zaglushka {
-  margin-top: 59px;
+.video .text .page__title-h2 {
+  margin-bottom: 80px;
+}
+
+.video-wrapper {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.video-wrapper .item {
+  width: 350px;
+}
+
+.video-wrapper .item-big {
+  width: 450px;
+  position: relative;
+  top: -45px;
+}
+
+.video-wrapper .item-big .page__img {
+  width: 450px;
+}
+
+.video-wrapper .item-big .page__img img {
+  width: 100%;
+}
+
+.video-wrapper .item-big .description {
+  width: 400px;
+  margin: 0 auto;
+}
+
+.video-wrapper .item-big .description .page__text_vsm {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.video-wrapper .item-big .description .row {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+}
+
+.video-wrapper .item-big .description .row .page__text_vsm {
+  font-size: 12px;
+}
+
+.video-wrapper .item .description {
+  width: 300px;
+  margin: 0 auto;
+}
+
+.video-wrapper .item .description .page__text_vsm {
+  margin-bottom: 10px;
+}
+
+.video-wrapper .item .description .row {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+}
+
+.video-wrapper .item .description .row .page__text_vsm {
+  font-size: 10px;
 }
 
 .be-first {
