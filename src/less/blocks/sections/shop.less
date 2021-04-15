@@ -8,6 +8,11 @@
         font-size: 0;
         display: flex;
         align-items: center;
+        .page__title-h1 {
+            .sm-block({
+                font-size: 50px;
+            });
+        }
     }
 
 }
@@ -26,6 +31,9 @@
             line-height: 24px;
             letter-spacing: 2.2px;
             color: grey;
+            .sm-block({
+                font-size: 20px;
+            });
             &.active {
                 color: #fff;
             }
@@ -70,6 +78,9 @@
             .item-shop {
                 width: 300px;
                 margin-bottom: 50px;
+                .ipad-block({
+                    width: 280px;
+                });
                 a {
                     text-decoration: none;
                 }

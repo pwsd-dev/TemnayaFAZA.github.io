@@ -23,6 +23,10 @@ module.exports = {
             width: "1024px",
             fields: "15px"
         },
+        fabletBig: {
+            width: "960px",
+            fields: "15px"
+        },
         md: {
             width: "920px",
             fields: "15px"
