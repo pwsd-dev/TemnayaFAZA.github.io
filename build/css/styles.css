@@ -196,20 +196,6 @@ img {
 }
 
 @font-face {
-  font-family: 'OpenSans-Bold';
-  src: url('../fonts/OpenSans/OpenSans-Bold.ttf') format('truetype'), url("../fonts/OpenSans/OpenSans-Bold.woff") format("woff"), url("../fonts/OpenSans/OpenSans-Bold.eot") format("eot");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'OpenSans-Regular';
-  src: url('../fonts/OpenSans/OpenSans-Regular.ttf') format('truetype'), url("../fonts/OpenSans/OpenSans-Regular.woff") format("woff"), url("../fonts/OpenSans/OpenSans-Regular.eot") format("eot");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
   font-family: 'PixelForce-Regular';
   src: url('../fonts/PixelForce/PixelForce-Regular.ttf') format('truetype'), url("../fonts/PixelForce/PixelForce-Regular.woff") format("woff"), url("../fonts/PixelForce/PixelForce-Regular.eot") format("eot");
   font-weight: normal;
@@ -251,6 +237,11 @@ input:focus {
 
 html {
   scroll-behavior: smooth;
+}
+
+.polygon {
+  -webkit-clip-path: polygon(0 10%, 100% 0%, 100% 87%, 0% 100%);
+          clip-path: polygon(0 10%, 100% 0%, 100% 87%, 0% 100%);
 }
 
 .page__title-h1 {
@@ -640,11 +631,6 @@ button {
   background-repeat: no-repeat;
   height: 630px;
   font-size: 0;
-}
-
-.banner .polygon {
-  -webkit-clip-path: polygon(0 8%, 100% 0%, 100% 89%, 0% 100%);
-          clip-path: polygon(0 8%, 100% 0%, 100% 89%, 0% 100%);
 }
 
 .banner-lightning {
@@ -1950,11 +1936,56 @@ a {
   }
 
   .about .bg-about {
-    height: 930px;
+    height: 830px;
   }
 
   .backstage .bg-backstage {
-    height: 930px;
+    height: 830px;
+  }
+
+  .video .bg-video {
+    height: 830px;
+  }
+
+  .be-first .bg-be-first {
+    height: 830px;
+  }
+}
+
+@media screen and (max-width: 1680px) {
+  .wrapper {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .banner-gif {
+    background-size: cover;
+    height: 630px;
+  }
+
+  .banner-lightning {
+    background-size: cover;
+    height: 785px;
+  }
+
+  .about .bg-about {
+    background-size: cover;
+    height: 630px;
+  }
+
+  .backstage .bg-backstage {
+    background-size: cover;
+    height: 630px;
+  }
+
+  .video .bg-video {
+    background-size: cover;
+    height: 630px;
+  }
+
+  .be-first .bg-be-first {
+    background-size: cover;
+    height: 630px;
   }
 }
 
@@ -1963,12 +1994,15 @@ a {
     padding-left: 15px;
     padding-right: 15px;
   }
-}
 
-@media screen and (max-width: 1367px) {
-  .wrapper {
-    padding-left: 15px;
-    padding-right: 15px;
+  .banner-gif {
+    background-size: contain;
+    height: 630px;
+  }
+
+  .banner-lightning {
+    background-size: contain;
+    height: 785px;
   }
 
   .about .bg-about {
@@ -1980,12 +2014,59 @@ a {
     background-size: contain;
     height: 630px;
   }
+
+  .video .bg-video {
+    background-size: contain;
+    height: 630px;
+  }
+
+  .be-first .bg-be-first {
+    background-size: contain;
+    height: 630px;
+  }
+}
+
+@media screen and (max-width: 1367px) {
+  .wrapper {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .banner-gif {
+    background-size: contain;
+    height: 630px;
+  }
+
+  .about .bg-about {
+    background-size: contain;
+    height: 630px;
+  }
+
+  .backstage .bg-backstage {
+    background-size: contain;
+    height: 630px;
+  }
+
+  .video .bg-video {
+    background-size: contain;
+    height: 630px;
+  }
+
+  .be-first .bg-be-first {
+    background-size: contain;
+    height: 630px;
+  }
 }
 
 @media screen and (max-width: 1200px) {
   .wrapper {
     padding-left: 15px;
     padding-right: 15px;
+  }
+
+  .backstage .bg-backstage {
+    height: 450px;
+    background-size: contain;
   }
 }
 
@@ -2003,7 +2084,43 @@ a {
     display: none;
   }
 
+  .banner-gif {
+    height: 530px;
+    background-size: contain;
+  }
+
+  .banner-lightning {
+    background-size: cover;
+    height: 500px;
+  }
+
+  .about .bg-about {
+    height: 450px;
+    background-size: contain;
+  }
+
+  .about .text {
+    height: 530px;
+    background-size: contain;
+  }
+
+  .backstage .bg-backstage {
+    height: 450px;
+    background-size: cover;
+  }
+
+  .backstage .text {
+    height: 530px;
+    background-size: contain;
+  }
+
+  .video .bg-video {
+    height: 450px;
+    background-size: contain;
+  }
+
   .be-first .bg-be-first {
+    background-size: cover;
     height: 400px;
   }
 
@@ -2250,6 +2367,7 @@ a {
   }
 
   .banner-gif {
+    background-size: cover;
     height: 400px;
   }
 
@@ -2291,8 +2409,9 @@ a {
   }
 
   .video .bg-video {
+    background-size: cover;
     height: 350px;
-    margin-bottom: 53px;
+    margin-bottom: 25px;
   }
 
   .video .text {
@@ -2329,6 +2448,7 @@ a {
   }
 
   .be-first .bg-be-first {
+    background-size: cover;
     height: 350px;
     margin-bottom: 50px;
   }

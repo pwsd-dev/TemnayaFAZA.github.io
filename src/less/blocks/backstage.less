@@ -7,11 +7,30 @@
         background-repeat: no-repeat;
         font-size: 0;
         .desktop-block({
-            height: 930px;
+            height: 830px;
         });
+
+        .laptopBig-block({
+            background-size: cover;
+            height: 630px;
+        });
+
+        .laptopMid-block({
+            background-size: contain;
+            height: 630px;
+        });
+
         .laptopMd-block({
             background-size: contain;
             height: 630px;
+        });
+        .laptopMini-block({
+            height: 450px;
+            background-size: contain;
+        });
+        .ipad-block({
+            height: 450px;
+            background-size: cover;
         });
         .sm-block({
             background-size: cover;
@@ -28,6 +47,10 @@
         align-items: center;
         justify-content: center;
         margin: 0 auto;
+        .ipad-block({
+            height: 530px;
+            background-size: contain;
+        });
         .sm-block({
             height: 600px;
             width: 320px;

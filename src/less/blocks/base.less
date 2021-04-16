@@ -13,12 +13,12 @@
 
 .scrollbar(@color_scrollbar-track, @color_scrollbar-thumb);
 
-@font-face {
-  .font(@font; @fontBold);
-}
-@font-face {
-  .font(@font; @fontRegular);
-}
+// @font-face {
+//   .font(@font; @fontBold);
+// }
+// @font-face {
+//   .font(@font; @fontRegular);
+// }
 
 @font-face {
   .font(@PixelForce; "@{PixelForce}-Regular");
@@ -49,4 +49,8 @@ input{
 
 html {
 	scroll-behavior: smooth;
+}
+
+.polygon {
+  clip-path: polygon(0 10%, 100% 0%, 100% 87%, 0% 100%);
 }
