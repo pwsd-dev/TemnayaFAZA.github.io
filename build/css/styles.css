@@ -1185,6 +1185,10 @@ button {
   color: grey;
 }
 
+.news {
+  background-color: #000;
+}
+
 .news .bg-news {
   background-image: url(../assets/img/news-bg.png);
   height: 400px;
@@ -2064,9 +2068,34 @@ a {
     padding-right: 15px;
   }
 
+  .banner-gif {
+    background-size: cover;
+    height: 550px;
+  }
+
+  .banner-lightning {
+    background-size: cover;
+    height: 700px;
+  }
+
+  .about .bg-about {
+    background-size: cover;
+    height: 500px;
+  }
+
   .backstage .bg-backstage {
-    height: 450px;
-    background-size: contain;
+    height: 500px;
+    background-size: cover;
+  }
+
+  .video .bg-video {
+    height: 500px;
+    background-size: cover;
+  }
+
+  .be-first .bg-be-first {
+    background-size: cover;
+    height: 500px;
   }
 }
 
@@ -2143,10 +2172,6 @@ a {
   .breadcrumbs-news-article .nav .page__link a {
     font-size: 15px;
     width: 100%;
-  }
-
-  .news .bg-news {
-    height: 300px;
   }
 
   .news .text {
@@ -2537,6 +2562,10 @@ a {
 
   .breadcrumbs-shop-article {
     display: none;
+  }
+
+  .news .bg-news {
+    height: 350px;
   }
 
   .news .text .page__title-h1 {
