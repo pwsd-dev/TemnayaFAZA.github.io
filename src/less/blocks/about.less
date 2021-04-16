@@ -5,12 +5,29 @@
         background-image: url(../assets/img/about-bg.jpg);
         height: 630px;
         background-size: cover;
+        // background-size: auto;
         background-repeat: no-repeat;
         font-size: 0;
+        img {
+            width: 100%;
+        }
+        .desktop-block({
+            height: 930px;
+        });
+        .laptopMd-block({
+            background-size: contain;
+            height: 630px;
+        });
         .sm-block({
+            background-size: cover;
             height: 350px;
             
         });
+    }
+
+    .polygon {
+        
+        clip-path: polygon(0 8%, 100% 0%, 100% 89%, 0% 100%);
     }
     .text {
         height: 785px;

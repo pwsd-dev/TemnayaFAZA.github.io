@@ -630,12 +630,21 @@ button {
   border: transparent;
 }
 
+.banner {
+  background-color: #000;
+}
+
 .banner-gif {
   background-image: url(../assets/img/banner.gif);
   background-size: cover;
   background-repeat: no-repeat;
   height: 630px;
   font-size: 0;
+}
+
+.banner .polygon {
+  -webkit-clip-path: polygon(0 8%, 100% 0%, 100% 89%, 0% 100%);
+          clip-path: polygon(0 8%, 100% 0%, 100% 89%, 0% 100%);
 }
 
 .banner-lightning {
@@ -668,6 +677,15 @@ button {
   background-size: cover;
   background-repeat: no-repeat;
   font-size: 0;
+}
+
+.about .bg-about img {
+  width: 100%;
+}
+
+.about .polygon {
+  -webkit-clip-path: polygon(0 8%, 100% 0%, 100% 89%, 0% 100%);
+          clip-path: polygon(0 8%, 100% 0%, 100% 89%, 0% 100%);
 }
 
 .about .text {
@@ -1917,6 +1935,29 @@ a {
   width: 270px;
 }
 
+@media screen and (max-width: 1920px) {
+  .wrapper {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .banner-gif {
+    height: 830px;
+  }
+
+  .banner-lightning {
+    height: 930px;
+  }
+
+  .about .bg-about {
+    height: 930px;
+  }
+
+  .backstage .bg-backstage {
+    height: 930px;
+  }
+}
+
 @media screen and (max-width: 1550px) {
   .wrapper {
     padding-left: 15px;
@@ -1928,6 +1969,16 @@ a {
   .wrapper {
     padding-left: 15px;
     padding-right: 15px;
+  }
+
+  .about .bg-about {
+    background-size: contain;
+    height: 630px;
+  }
+
+  .backstage .bg-backstage {
+    background-size: contain;
+    height: 630px;
   }
 }
 
@@ -2203,6 +2254,7 @@ a {
   }
 
   .banner-lightning {
+    background-size: cover;
     height: 500px;
   }
 
@@ -2215,6 +2267,7 @@ a {
   }
 
   .about .bg-about {
+    background-size: cover;
     height: 350px;
   }
 
@@ -2224,6 +2277,7 @@ a {
   }
 
   .backstage .bg-backstage {
+    background-size: cover;
     height: 350px;
   }
 
