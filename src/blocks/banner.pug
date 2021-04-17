@@ -1,7 +1,10 @@
 section.banner
-    picture
-        source(srcset="assets/img/shop-bg.png")
-        img(src="assets/img/banner.gif")
+    video(autoplay loop muted src="assets/img/banner.gif" poster="assets/img/shop-bg.png" )
+    picture 
+        source(srcset="assets/img/shop-bg.png" )
+        source(srcset="assets/img/banner.mp4" )
+        img(src="assets/img/banner.gif", alt="")
+       
     .banner-gif
     
     .polygon
