@@ -20,7 +20,28 @@
 .video-article-wrapper{
     background-color: #000;
     .item-video {
-        width: 300px;
+        width: 1200px;
+        height: 720px;
+        position: relative;
+        
+        .videoInsert {
+            position: absolute; 
+            right: 0; 
+            bottom: 0;
+            top: 0;
+            left: 0;
+            min-width: 100%; 
+            min-height: 100%;
+            width: auto; 
+            height: auto; 
+            // z-index: -100;
+            background-size: cover;
+            overflow: hidden;
+        }
+
+        .ipad-block({
+            width: 800px;
+        });
     }
 
     .text {
