@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ru"> 
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" type="image/x-icon" href="assets/img/favicon.ico"><link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+		<base href="../">
+		<title>Магазин</title>
+		<link rel="stylesheet" href="css/styles.css" type="text/css">
+	</head>
+	<body>
+		<div class="page">
+			<header class="header">
+				<div class="wrapper">
+					<nav class="nav">
+						<div class="nav-left"><a href="../">
+								<div class="page__img"><img src="assets/img/logo.svg"></div></a></div>
+						<div class="nav-center">
+							<div class="page__link"><a href="news/news.html">Новости и статьи</a></div>
+							<div class="page__link"><a href="shop/shop.html">магазин</a></div>
+							<div class="page__link"><a href="forumPage/forumPage.html">форум</a></div>
+						</div>
+						<div class="nav-right">
+							<div class="basket">
+								<div class="page__img"><img src="assets/img/basket.svg"></div>
+								<div class="counter"> <span></span></div>
+							</div>
+							<div class="burger">
+								<button class="icon" type="button" onclick="openBlock()" id="burgerBtn"><span></span><span></span><span></span><span></span></button>
+								<div class="other" id="other">
+									<div class="inner">
+										<div class="wrapper">
+											<div class="nav-center">
+												<div class="page__link"><a href="news/news.html">Новости и статьи</a></div>
+												<div class="page__link"><a href="shop/shop.html">магазин</a></div>
+												<div class="page__link"><a href="forumPage/forumPage.html">форум</a></div>
+											</div>
+											<div class="soc"><a href="#">
+													<div class="page__img"><img src="assets/img/instagram.svg"></div></a><a class="page__img" href="#"><img src="assets/img/telegram.svg"></a><a class="page__img" href="https://vk.com/nikita_poddubnovvv"><img src="assets/img/vk.svg"></a><a class="page__img" href="https://www.youtube.com/channel/UCrxMZAdN2fOURIto_-fQrLQ"><img src="assets/img/youtube.svg"></a></div>
+											<div class="logo"><a href="/">
+													<div class="page__img"><img src="assets/img/logo.svg"></div></a></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</nav>
+				</div>
+			</header>
+			<main class="page">
+				<section class="orderingProcess">
+					<section class="breadcrumbs-news-article">
+						<div class="wrapper">
+							<nav class="nav">
+								<div class="page__link"><a href="../">Главная</a></div>
+								<div class="icon-arrow">
+									<div class="page__img"><img src="assets/img/icon-arrow.svg"></div>
+								</div>
+								<div class="page__link"><a href="shop/shop.html">Магазин</a></div>
+								<div class="icon-arrow">
+									<div class="page__img"><img src="assets/img/icon-arrow.svg"></div>
+								</div>
+								<div class="page__link">
+									<div class="white"><a href="orderingProcess/orderingProcess.html">оформление заказа</a></div>
+								</div>
+							</nav>
+						</div>
+					</section>
+					<div class="orderingProcess-content">
+						<div class="wrapper">
+							<p class="page__text_more">оформление заказа</p>
+							<div class="orderingProcess-content-wrapper">
+								<div class="left">
+									<div class="items-wrapper">
+										<div class="item">
+											<div class="page__img"><img src="assets/img/t-shirt-ordering.png"></div>
+											<div class="column">
+												<p class="page__text__small">Крутая футболка “Переходи на темную фазу”</p>
+												<p class="page__text">1 500Р</p>
+											</div>
+											<div class="row">
+												<form class="number">
+													<div class="__select" data-state="">
+														<div class="__select__title" data-default="1">s</div>
+														<div class="__select__content">
+															<input class="__select__input" id="singleSelect0" type="radio" data-state="" checked>
+															<label class="__select__label" for="singleSelect0">m</label>
+															<input class="__select__input" id="singleSelect1" type="radio" name="singleSelect">
+															<label class="__select__label" for="singleSelect1">l</label>
+															<input class="__select__input" id="singleSelect1" type="radio" name="singleSelect">
+															<label class="__select__label" for="singleSelect1">xl</label>
+														</div>
+													</div>
+												</form>
+												<form class="number">
+													<div class="__select" data-state="">
+														<div class="__select__title" data-default="1">1</div>
+														<div class="__select__content">
+															<input class="__select__input" id="singleSelect0" type="radio" data-state="" checked>
+															<label class="__select__label" for="singleSelect0">1</label>
+															<input class="__select__input" id="singleSelect1" type="radio" name="singleSelect">
+															<label class="__select__label" for="singleSelect1">1</label>
+															<input class="__select__input" id="singleSelect1" type="radio" name="singleSelect">
+															<label class="__select__label" for="singleSelect1">2</label>
+														</div>
+													</div>
+												</form>
+												<form class="number">
+													<div class="__select" data-state="">
+														<div class="__select__title" data-default="1">s</div>
+														<div class="__select__content">
+															<input class="__select__input" id="singleSelect0" type="radio" data-state="" checked>
+															<label class="__select__label" for="singleSelect0">m</label>
+															<input class="__select__input" id="singleSelect1" type="radio" name="singleSelect">
+															<label class="__select__label" for="singleSelect1">l</label>
+															<input class="__select__input" id="singleSelect1" type="radio" name="singleSelect">
+															<label class="__select__label" for="singleSelect1">xl</label>
+														</div>
+													</div>
+												</form>
+											</div>
+											<div class="icon-skip"><img src="assets/img/icon-skip.svg"></div>
+										</div>
+										<div class="item">
+											<div class="page__img"><img src="assets/img/t-shirt-ordering.png"></div>
+											<div class="column">
+												<p class="page__text__small">Крутая футболка “Переходи на темную фазу”</p>
+												<p class="page__text">1 500Р</p>
+											</div>
+											<div class="row">
+												<form class="number">
+													<div class="__select" data-state="">
+														<div class="__select__title" data-default="1">s</div>
+														<div class="__select__content">
+															<input class="__select__input" id="singleSelect0" type="radio" data-state="" checked>
+															<label class="__select__label" for="singleSelect0">m</label>
+															<input class="__select__input" id="singleSelect1" type="radio" name="singleSelect">
+															<label class="__select__label" for="singleSelect1">l</label>
+															<input class="__select__input" id="singleSelect1" type="radio" name="singleSelect">
+															<label class="__select__label" for="singleSelect1">xl</label>
+														</div>
+													</div>
+												</form>
+												<form class="number">
+													<div class="__select" data-state="">
+														<div class="__select__title" data-default="1">1</div>
+														<div class="__select__content">
+															<input class="__select__input" id="singleSelect0" type="radio" data-state="" checked>
+															<label class="__select__label" for="singleSelect0">1</label>
+															<input class="__select__input" id="singleSelect1" type="radio" name="singleSelect">
+															<label class="__select__label" for="singleSelect1">1</label>
+															<input class="__select__input" id="singleSelect1" type="radio" name="singleSelect">
+															<label class="__select__label" for="singleSelect1">2</label>
+														</div>
+													</div>
+												</form>
+												<form class="number">
+													<div class="__select" data-state="">
+														<div class="__select__title" data-default="1">s</div>
+														<div class="__select__content">
+															<input class="__select__input" id="singleSelect0" type="radio" data-state="" checked>
+															<label class="__select__label" for="singleSelect0">m</label>
+															<input class="__select__input" id="singleSelect1" type="radio" name="singleSelect">
+															<label class="__select__label" for="singleSelect1">l</label>
+															<input class="__select__input" id="singleSelect1" type="radio" name="singleSelect">
+															<label class="__select__label" for="singleSelect1">xl</label>
+														</div>
+													</div>
+												</form>
+											</div>
+											<div class="icon-skip"><img src="assets/img/icon-skip.svg"></div>
+										</div>
+									</div>
+								</div>
+								<div class="right">
+									<div class="basket-wrapper">
+										<div class="text">
+											<p class="page__text">корзина</p>
+											<div class="row">
+												<div class="text-wrapper">
+													<p class="page__text_vsm">Крутая футболка “Переходи на темную фазу”</p>
+												</div>
+												<p class="page__text_vsm">2 х 1 500Р</p>
+											</div>
+											<div class="row-delivery">
+												<p class="page__text__small">Доставка</p>
+												<p class="page__text__small">300Р</p>
+											</div>
+											<div class="row-result">
+												<p class="page__text">итого</p>
+												<p class="page__text">3 300р</p>
+											</div><a href="OrderingProcessTwo/OrderingProcessTwo.html">
+												<button class="page__btn">оформить заказ</button></a>
+										</div>
+									</div>
+									<div class="next">
+										<p class="page__text_more">далее</p>
+										<ul>
+											<li>cпособ доставки <br> выберите как будете получать свой заказ</li>
+											<li>оплата <br> Выберите способ оплаты и введите платёжные данные.</li>
+											<li>подтверждение заказа<br> Разместите заказ и получите подтверждение по электронной почте.</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
+			<footer class="footer">
+				<div class="wrapper">
+					<div class="nav-left"><a href="/">
+							<div class="page__img"><img src="assets/img/logo.svg"></div></a></div>
+					<div class="nav-center">
+						<div class="page__link"><a href="#">Новости и статьи</a></div>
+						<div class="page__link"><a href="#">магазин</a></div>
+						<div class="page__link"><a href="#">форум</a></div>
+					</div>
+					<div class="soc">
+						<div class="page__img"><img src="assets/img/instagram.svg"></div>
+						<div class="page__img"><img src="assets/img/telegram.svg"></div>
+						<div class="page__img"><img src="assets/img/vk.svg"></div>
+						<div class="page__img"><img src="assets/img/youtube.svg"></div>
+					</div>
+					<div class="text">
+						<p class="page__text">Cделано с любовью в Yode.PRO <br> 2020</p>
+					</div>
+				</div>
+			</footer>
+		</div>
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script><script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.9.0/slick/slick.min.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>

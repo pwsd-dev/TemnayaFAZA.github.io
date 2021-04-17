@@ -1,0 +1,28 @@
+section.orderingProcessTwo
+    include ../blocks/breadcrumbsOrderingProcessTwo
+    .orderingProcessTwo-content
+        .wrapper
+            .text
+                p.page__text_more доставка
+                p.page__text Введите адрес своей электронной почты. На этот адрес будут отправляться уведомления о статусе заказа.
+            form.form
+                .row
+                    .page__text email
+                    .input
+                        input(type="text" placeholder="введите email")
+                p.page__text__small При заполнении полей адреса и ФИО, указывайте полные данные для почтовых служб
+                .rowTwo
+                    .row
+                        .page__text фио
+                        .input
+                            input(type="text" placeholder="иванов анатолий алексеевич")
+                    .row
+                        .page__text телефон
+                        .input
+                            input(type="text" placeholder="+7 (919) 234-90-78")
+                .row
+                    .page__text адрес
+                    .input
+                        .more
+                            input(type="text" placeholder="Улица, дом, квартира ( Укажите свой адрес полностью)")
+            button.page__btn оформить заказ
