@@ -6,11 +6,19 @@
         flex-direction: column;
         justify-content: center;
 
+        
         .top {
             .page__text {
                 text-align: center;
                 margin-bottom: 32px;
             }
+
+            .sm-block({
+                width: 320px;
+                margin: 0 auto;
+            });
+
+            
         }
         .page__img {
             display: flex;
@@ -27,6 +35,11 @@
             margin: 0 auto;
             border: 3px solid #fff;
             padding: 24px 24px 30px 24px;
+            .sm-block({
+                width: 300px;
+                padding: 12px;
+                padding-bottom: 20px;
+            });
             .page__text {
                 &:nth-of-type(1){
                     margin-bottom: 20px;
@@ -39,6 +52,7 @@
                 margin-bottom: 16px;
                 .text-wrapper {
                     width: 200px;
+                    
                 }
             }
 
@@ -61,6 +75,14 @@
                     height: 3px;
                     bottom: -20px;
                 }
+
+                .page__text__small {
+                    .sm-block({
+                        font-size: 12px;
+                    });
+                }
+
+                
             }
 
             .row-result {

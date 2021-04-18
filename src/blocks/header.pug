@@ -13,18 +13,49 @@ header.header
                 .page__link
                     a(href="forumPage/forumPage.html") форум
             .nav-right
-                .basket
-                    .page__img
-                        img(src="assets/img/basket.svg")
-                    .counter 
-                        span
+                button(type="button" onclick="openBasket()")#basketBtn
+                    .basket
+                        .page__img
+                            img(src="assets/img/basket.svg")
+                        .counter 
+                            span
+                        .basket-inner#basketInner
+                            p.page__text_more корзина
+                            .basket-merch-items
+                                .basket-merch-item
+                                    .left
+                                        .page__img
+                                            img(src="assets/img/t-shirt-small.png")
+                                        .column
+                                            p.page__text_vsm мерч
+                                            p.page__text__small Крутая футболка
+                                            p.page__text 1 500Р
+                                    .right
+                                        .page__img
+                                            img(src="assets/img/icon-skip.svg")
+                                .basket-merch-item
+                                    .left
+                                        .page__img
+                                            img(src="assets/img/t-shirt-small.png")
+                                        .column
+                                            p.page__text_vsm мерч
+                                            p.page__text__small Крутая футболка
+                                            p.page__text 1 500Р
+                                    .right
+                                        .page__img
+                                            img(src="assets/img/icon-skip.svg")
+                                .row-price
+                                    p.page__text_more Итого
+                                    p.page__text_more 1 500Р
+                                .buttonOrder
+                                    a(href="orderingProcess/orderingProcess.html")
+                                        .page__btn офорить заказ
                 .burger
                     button(type="button" onclick="openBlock()")#burgerBtn.icon
                         span
                         span
                         span
                         span
-                    
                     #other.other
                         .inner
                             .wrapper

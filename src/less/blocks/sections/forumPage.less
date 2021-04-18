@@ -20,12 +20,29 @@
     padding-bottom: 7%;
     background-color: #000;
     display: flex;
+    .sm-block({
+        flex-direction: column;
+    });
     &-left {
         .forum-search {
             width: 800px;
             height: 62px;
             margin-bottom: 32px;
             position: relative;
+            .ipad-block({
+                width: 600px;
+            });
+            .fabletMid-block({
+                width: 450px;
+                
+            });
+            .ipadMini-block({
+                width: 400px;
+                
+            });
+            .sm-block({
+                width: 100%;
+            });
             &::after {
                 content: '';
                 position: absolute;
@@ -70,6 +87,9 @@
                     height: 100%;
                     display: inline-block;
                     color: #fff;
+                    .sm-block({
+                        height: 60%;
+                    });
                 }
             }
         }
@@ -81,8 +101,38 @@
                 border: 2px solid #fff;
                 display: flex;
                 margin-bottom: 20px;
+                .ipad-block({
+                    width: 630px;
+                    height: 320px;
+                });
+                .fabletBig-block({
+                    width: 580px;
+                    height: 350px;
+                });
+                .fabletBig-block({
+                    width: 580px;
+                    height: 350px;
+                });
+                .fabletMid-block({
+                    width: 450px;
+                    height: 370px;
+                });
+                .ipadMini-block({
+                    width: 400px;
+                    height: 370px;
+                });
+                .sm-block({
+                    width: 100%;
+                    height: 400px;
+                });
                 .forum-item-left {
                     padding: 36px 24px 0 24px;
+                    .ipad-block({
+                        padding: 36px 24px 0 24px;
+                    });
+                    .sm-block({
+                        padding: 36px 14px 0 14px;
+                    });
                     .forum-counter {
                         align-items: center;
                         display: flex;
@@ -102,15 +152,58 @@
 
                 .forum-item-right {
                     padding: 24px 0 0 0;
+                    .ipad-block({
+                        padding: 24px 34px 0 0;
+                    });
+                    .sm-block({
+                        padding: 24px 0 0 0;
+                    });
                     .text{
                         width: 738px;
+                        
+                        .ipad-block({
+                            width: 500px;
+                        });
+                        .fabletBig-block({
+                            width: 430px;
+                            // height: 320px;
+                        });
+                        .fabletMid-block({
+                            width: 330px;
+                            // height: 370px;
+                        });
+                        .ipadMini-block({
+                            width: 300px;
+                            
+                        });
+                        .sm-block({
+                            width: 100%;
+                            
+                        });
                         .page__text {
                             margin-bottom: 12px;
+                            .ipadMini-block({
+                                font-size: 14px;
+                                
+                            });
+
+                            .sm-block({
+                                font-size: 12px;
+                                
+                            });
                         }
 
                         .page__text__small {
                             margin-bottom: 50px;
                             position: relative;
+                            .ipadMini-block({
+                                font-size: 12px;
+                                
+                            });
+                            .sm-block({
+                                font-size: 10px;
+                                
+                            });
                             &::after {
                                 content: '';
                                 position: absolute;
@@ -119,6 +212,9 @@
                                 background-color: #fff;
                                 left: 0;
                                 bottom: -24px;
+                                .sm-block({
+                                    width: 90%;
+                                });
                             }
                         }
                     }
@@ -126,15 +222,33 @@
                         display: flex;
                         justify-content: space-between;
                         align-items: center;
+                        .sm-block({
+                            padding-right: 10px;
+                        });
                         .left-side {
                             display: flex;
                             align-items: center;
+                            .sm-block({
+                                flex-direction: column;
+                                width: 200px;
+                                
+                                
+                            });
                             .avatar {
                                 margin-right: 12px;
+                                .sm-block({
+                                    margin-right: 15px;
+                                });
                             }
 
                             .page__text__small {
                                 margin-right: 32px;
+                                .ipadMini-block({
+                                    font-size: 10px;
+                                    
+                                });
+
+                                
                             }
                         }
 
@@ -143,6 +257,13 @@
                             // align-items: center;
                             .page__text__small  {
                                 margin-left: 12px;
+                                .ipadMini-block({
+                                    font-size: 10px;
+                                    
+                                });
+                                .sm-block({
+                                    margin-left: 5px;
+                                });
                             }
                             .comments {
                                 margin: 0 6px 0 32px;
@@ -158,6 +279,10 @@
 
     &-right {
         padding-left: 20px;
+        
+        .sm-block({
+            order: -1;
+        });
         .page__btn {
             width: 300px;
             box-shadow: none;
@@ -172,6 +297,10 @@
                 width: 20px;
                 height: 20px;
             }
+
+            .sm-block({
+                margin-top: 15%;
+            });
         }
         .authors {
             
@@ -180,6 +309,7 @@
                 justify-content: space-between;
                 align-items: center;
                 margin-bottom: 16px;
+                
                 .page__text {
                     &:nth-last-of-type(1) {
                         font-size: 12px;
@@ -197,12 +327,14 @@
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
+                    
                     margin: 16px 0 16px 0;
                 }
 
                 .left {
                     display: flex;
                     align-items: center;
+                    
                     .avatar {
                         margin: 0 9px 0 9px;
                     }

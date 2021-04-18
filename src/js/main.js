@@ -4,7 +4,15 @@ function openBlock() {
     burgerBtn.classList.toggle("active");
     // otherId.classList.toggle("hidden");
     // otherId.querySelector('.inner').classList.toggle('active');
+    const basketBtn = document.getElementById("basketBtn")
+    basketBtn.classList.toggle("active");
+}
 
+function openBasket() {
+    const basketBtn = document.getElementById("basketBtn")
+    basketBtn.classList.toggle("active");
+    const basketInner = document.getElementById("basketInner")
+    basketInner.classList.toggle("active");
 }
 
 

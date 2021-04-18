@@ -1,6 +1,10 @@
 .header{
     background-color: #000;
     padding: 36px 0 14px 0;
+    // position: fixed;
+    // top: 0;
+    // width: 100%;
+    // z-index: 300;
     .nav {
         display: flex;
         align-items: center;
@@ -44,6 +48,99 @@
                     padding-top: 100%;
                     
                     
+                }
+            }
+
+            .basket {
+                position: relative;
+                .basket-inner {
+                    opacity: 0;
+                    position: absolute;
+                    width: 500px;
+                    height: 398px;
+                    background: #000;
+                    left: -450px;
+                    top: 78px;
+                    padding: 24px 0 20px 24px;
+                    .sm-block({
+                        padding: 0;
+                        padding-left: 20px;
+                    });
+                    transition: .3s ease-in-out;
+                    z-index: -100;
+                    .sm-block({
+                        width: 320px;
+                        left: -220px;
+                        
+                    });
+                    .page__text_more {
+                        text-align: left;
+                        margin-bottom: 20px;
+                    }
+                    &.active {
+                        opacity: 1;
+                        transition: .3s ease-in-out;
+                        z-index: 500;
+                    }
+
+                    .basket-merch-items {
+                        display: flex; 
+                        flex-direction: column;
+                        
+                        .basket-merch-item {
+                            
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            width: 440px;
+                            height: 90px;
+                            border: 2px solid #fff;
+                            margin-bottom: 15px;
+                            .sm-block({
+                                width: 300px;
+                                
+                                
+                            });
+                            .left {
+                                display: flex;
+                                align-items: center;
+                            }
+                            .page__img {
+                                margin-right: 20px;
+                                
+                            }
+                            .column {
+
+                                .page__text_vsm, .page__text, .page__text__small  {
+                                    text-align: left;
+                                }
+                            }
+                        }
+
+
+                        .row-price {
+                            display: flex;
+                            justify-content: space-between;
+                            width: 440px;
+                            margin-bottom: 20px;
+                            .sm-block({
+                                width: 300px;
+                            });
+                        }
+
+                        .buttonOrder {
+                            
+                            display: flex;
+                            
+                            .page__btn {
+                                box-shadow: none;
+                                width: 400px;
+                                .sm-block({
+                                    width: 260px;
+                                });
+                            }
+                        }
+                    }
                 }
             }
 

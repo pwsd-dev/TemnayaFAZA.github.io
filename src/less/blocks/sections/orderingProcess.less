@@ -9,11 +9,25 @@
 
         &-wrapper {
             display: flex;
+
+            .ipad-block({
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+            });
+
+            
             
             .left {
                 .items-wrapper {
                     width: 800px;
                     padding-bottom: 5%;
+                    .ipadMini-block({
+                      width: 700px;
+                    });
+                    .sm-block({
+                      width: 300px;
+                    });
                     .item {
                         display: flex;
                         justify-content: space-between;
@@ -33,7 +47,10 @@
                         }
                         .row {
                             display: flex;
-                                
+                            .sm-block({
+                             flex-direction: column;
+                             padding-bottom: 30px;
+                            });
                                 .sm-block({
                                     flex-wrap: wrap;
                                     justify-content: center;
@@ -53,6 +70,9 @@
                                     width: 50px;
                                     height: 40px;
                                     margin: 0 auto;
+                                    .sm-block({
+                                      margin: 20px auto;
+                                    });
                                     .fabletMid-block({
                                         width: 50px;
                                         height: 48px;
@@ -218,7 +238,10 @@
             .right {
                 width: 350px;
                 margin-left: 28px;
-                
+                .sm-block({
+                  width: 300px;
+                  margin: 0 auto;
+                });
                 .basket-wrapper {
                     border: 2px solid #fff;
                     padding: 24px 20px 30px 24px;

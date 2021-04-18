@@ -20,10 +20,49 @@
 							<div class="page__link"><a href="forumPage/forumPage.html">форум</a></div>
 						</div>
 						<div class="nav-right">
-							<div class="basket">
-								<div class="page__img"><img src="assets/img/basket.svg"></div>
-								<div class="counter"> <span></span></div>
-							</div>
+							<button type="button" onclick="openBasket()" id="basketBtn">
+								<div class="basket">
+									<div class="page__img"><img src="assets/img/basket.svg"></div>
+									<div class="counter"> <span></span></div>
+									<div class="basket-inner" id="basketInner">
+										<p class="page__text_more">корзина</p>
+										<div class="basket-merch-items">
+											<div class="basket-merch-item">
+												<div class="left">
+													<div class="page__img"><img src="assets/img/t-shirt-small.png"></div>
+													<div class="column">
+														<p class="page__text_vsm">мерч</p>
+														<p class="page__text__small">Крутая футболка</p>
+														<p class="page__text">1 500Р</p>
+													</div>
+												</div>
+												<div class="right">
+													<div class="page__img"><img src="assets/img/icon-skip.svg"></div>
+												</div>
+											</div>
+											<div class="basket-merch-item">
+												<div class="left">
+													<div class="page__img"><img src="assets/img/t-shirt-small.png"></div>
+													<div class="column">
+														<p class="page__text_vsm">мерч</p>
+														<p class="page__text__small">Крутая футболка</p>
+														<p class="page__text">1 500Р</p>
+													</div>
+												</div>
+												<div class="right">
+													<div class="page__img"><img src="assets/img/icon-skip.svg"></div>
+												</div>
+											</div>
+											<div class="row-price">
+												<p class="page__text_more">Итого</p>
+												<p class="page__text_more">1 500Р</p>
+											</div>
+											<div class="buttonOrder"><a href="orderingProcess/orderingProcess.html">
+													<div class="page__btn">офорить заказ</div></a></div>
+										</div>
+									</div>
+								</div>
+							</button>
 							<div class="burger">
 								<button class="icon" type="button" onclick="openBlock()" id="burgerBtn"><span></span><span></span><span></span><span></span></button>
 								<div class="other" id="other">
@@ -95,7 +134,7 @@
 					<h2 class="page__title-h2">новые видео</h2>
 				</div>
 				<div class="wrapper">
-					<div class="video-wrapper"><a href="#">
+					<div class="video-wrapper"><a href="backstageAllVideo/backstageAllVideo.html">
 							<div class="item">
 								<div class="page__img"><img src="assets/img/video-item-1.png"></div>
 								<div class="description">
@@ -105,28 +144,27 @@
 										<p class="page__text_vsm">160 570 просмотров</p>
 									</div>
 								</div>
-							</div></a>
-						<div class="item-big">
-							<div class="page__img"><img src="assets/img/video-item-2.png"></div>
-							<div class="description">
-								<p class="page__text_vsm">Автомобиль БУДУЩЕГО своими руками! + РОЗЫГРЫШ моей САМОДЕЛКИ)))</p>
-								<div class="row">
-									<p class="page__text_vsm">17 нояб. 2020 г.</p>
-									<p class="page__text_vsm">160 570 просмотров</p>
+							</div></a><a href="backstageAllVideo/backstageAllVideo.html">
+							<div class="item-big">
+								<div class="page__img"><img src="assets/img/video-item-2.png"></div>
+								<div class="description">
+									<p class="page__text_vsm">Автомобиль БУДУЩЕГО своими руками! + РОЗЫГРЫШ моей САМОДЕЛКИ)))</p>
+									<div class="row">
+										<p class="page__text_vsm">17 нояб. 2020 г.</p>
+										<p class="page__text_vsm">160 570 просмотров</p>
+									</div>
 								</div>
-							</div>
-						</div>
-						<div class="item">
-							<div class="page__img"><img src="assets/img/video-item-3.png"></div>
-							<div class="description">
-								<p class="page__text_vsm">Автомобиль БУДУЩЕГО своими руками! + РОЗЫГРЫШ моей САМОДЕЛКИ)))</p>
-								<div class="row">
-									<p class="page__text_vsm">17 нояб. 2020 г.</p>
-									<p class="page__text_vsm">160 570 просмотров</p>
+							</div></a><a href="backstageAllVideo/backstageAllVideo.html">
+							<div class="item">
+								<div class="page__img"><img src="assets/img/video-item-3.png"></div>
+								<div class="description">
+									<p class="page__text_vsm">Автомобиль БУДУЩЕГО своими руками! + РОЗЫГРЫШ моей САМОДЕЛКИ)))</p>
+									<div class="row">
+										<p class="page__text_vsm">17 нояб. 2020 г.</p>
+										<p class="page__text_vsm">160 570 просмотров</p>
+									</div>
 								</div>
-							</div>
-						</div>
-					</div>
+							</div></a></div>
 				</div>
 			</section>
 			<section class="be-first">

@@ -16,19 +16,36 @@
 
         .form {
             padding-bottom: 2%;
+            
             .row {
                 display: flex;
                 align-items: center;
                 height: 53px;
                 margin-bottom: 40px;
                 margin-right: 20px;
+                .fabletMid-block({
+                    
+                });
+
+                .sm-block({
+                    flex-direction: column;
                 
+                });
                 .page__text {
                     margin-right: 24px;
+                    .sm-block({
+                        
+                    
+                    });
                 }
                 
                 .input {
                     position: relative;
+                    .sm-block({
+                        padding: 4px;
+                        
+                    
+                    });
                     &::after {
                         content: '';
                         position: absolute;
@@ -43,6 +60,18 @@
                     .more {
                         input {
                             width: 1100px;
+                            .laptopMini-block({
+                                width: 800px;
+                            });
+
+                            .fabletMid-block({
+                                width: 600px;
+                            });
+
+                            .sm-block({
+                                width: 320px;
+                            });
+                            
                         }
                     }
                 } 
@@ -57,13 +86,28 @@
                     line-height: 24px;
                     letter-spacing: 2.2px;
                     color: #fff;
-                    
+                    .laptopMini-block({
+                        width: 400px;
+                    });
+                    .ipad-block({
+                        width: 350px;
+                    });
+                    .fabletMid-block({
+                        width: 320px;
+                    });
                     &::placeholder{
                         font-family: "@{PixelForce}-Regular";
                         font-size: 18px;
                         line-height: 24px;
                         letter-spacing: 2.2px;
                         color: grey;
+                        .ipad-block({
+                            font-size: 16px;
+                        });
+
+                        .fabletMid-block({
+                            font-size: 14px;
+                        });
                     }
 
                     
@@ -78,11 +122,18 @@
 
             .rowTwo {
                 display: flex;
+                .fabletMid-block({
+                    flex-direction: column;
+                });
             }
         }
 
         .page__btn {
             box-shadow: none;
+            .sm-block({
+                margin: 0 auto;
+            
+            });
         }
     }
 
