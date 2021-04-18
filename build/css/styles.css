@@ -3160,7 +3160,11 @@ a {
   }
 
   .video-article-wrapper .item-video {
-    width: 800px;
+    width: 100%;
+  }
+
+  .video-article-wrapper .text {
+    width: 100%;
   }
 
   .forum-content-left .forum-search {
@@ -3662,6 +3666,10 @@ a {
     display: none;
   }
 
+  .breadcrumbs-videoArticle {
+    display: none;
+  }
+
   .news .bg-news {
     height: 350px;
   }
@@ -3775,6 +3783,10 @@ a {
   }
 
   .backstageAllVideo-wrapper {
+    width: 100%;
+  }
+
+  .video-article-wrapper .item-video {
     width: 100%;
   }
 
